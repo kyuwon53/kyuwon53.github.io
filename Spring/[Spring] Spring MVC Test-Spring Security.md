@@ -17,4 +17,6 @@
 ```
 - 스프링 시큐리티를 스프링 MVC 테스트와 통합할 때 필요한 모든 초기 세팅을 수행한다. 
 
-저 설정 1줄 추가 했더니 거짓말같이 아주 잘된다. :smile 
+저 설정 1줄 추가 했더니 거짓말같이 아주 잘된다. 
+
+- [참고 ](https://godekdls.github.io/Spring%20Security/testing/#1921-setting-up-mockmvc-and-spring-security)
