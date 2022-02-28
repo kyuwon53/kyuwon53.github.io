@@ -7,7 +7,7 @@ categories: 코드숨 스프링 회고
 
 - Spring Security 사용자 인증 기능 구현 
   - 테스트시 Spring Security 관련 에러가 나서 진행에 많은 차질이 있었다. 결국 며칠간 다른 기능부터 만들고 후에 해결을 했다. 
-  - [Spring MVC Test - Spring Security TEST](https://github.com/Kyuwon53/Kyuwon53.github.io/blob/main/Spring/%5BSpring%5D%20Spring%20MVC%20Test-Spring%20Security.md)
+  - [Spring MVC Test - Spring Security TEST](https://github.com/Kyuwon53/Kyuwon53.github.io/blob/main/_posts/2022-02-26-%5BSpring%5D%20Spring%20MVC%20Test-Spring%20Security.md)
 
 - 댓글 기능 구현 
   - `JPA`를 사용하여 개발은 처음 해보는 것이여서 테이블끼리 조인하고 맵핑하는데 어려움이 있어서 일단 기능 부분만 구현해놓고 후에 다시 리팩토링하기로 했다. 
