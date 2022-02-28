@@ -1,4 +1,7 @@
-# [CodeSoom - Spring 4기] 9주차 주간회고
+---
+layout: post
+categories: 코드숨 회고
+---
 
 ## Facts (사실, 객관)
 - 아이디어가 늦게 떠올라 늦게 시작을 했다. 

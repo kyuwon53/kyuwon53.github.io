@@ -1,5 +1,7 @@
-# [Spring] @ComponentScan 어노테이션이란? 
-
+---
+layout: post
+categories: 스프링
+---
 ![alt](.\img\SpringBootApplication.png)
 
 - @ComponentScan에만 적용된다. 

@@ -1,4 +1,7 @@
-# [CodeSoom - Spring 4기] 12주차 주간회고
+---
+layout: post
+categories: 코드숨 스프링 회고
+---
 
 ## 🧐 이번 주 진행사항? 
 

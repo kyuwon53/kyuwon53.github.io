@@ -1,4 +1,7 @@
-# [Java] Optional 클래스 
+---
+layout: post
+categories: 자바
+---
 
 ## java.util.Optional<T> 클래스 
 - 'T'타입의 객체를 포장해주는 래퍼 클래스(Wrapper class)이다. 

@@ -1,4 +1,7 @@
-# [CodeSoom - Spring 4기] 5주차 주간회고
+---
+layout: post
+categories: 회고 코드숨
+---
 
 ## Facts (사실, 객관)
 - 월,화 휴가라 근무 시간에 맞춰 코드숨 과제를 진행했다.

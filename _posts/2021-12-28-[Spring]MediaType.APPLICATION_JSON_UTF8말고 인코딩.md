@@ -1,4 +1,7 @@
-# [SPRING] MediaType.APPLICATION_JSON_UTF8 말고 인코딩
+---
+layout: post
+categories: 스프링 테스트
+---
 
 ![APPLICATION_JSON_UTF8](img/UTF8.png)
 

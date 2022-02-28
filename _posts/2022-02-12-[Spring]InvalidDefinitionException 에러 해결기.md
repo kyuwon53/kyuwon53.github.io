@@ -1,4 +1,7 @@
-# [SPRING] com.fasterxml.jackson.databind.exc.InvalidDefinitionException 에러 해결기 
+---
+layout: post
+categories: 스프링 오류
+---
 
 컨트롤러 테스트 도중 
 ```console
