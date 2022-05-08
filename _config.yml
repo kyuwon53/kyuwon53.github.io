@@ -1,60 +1,54 @@
-title: kyuwon 기록
+# Configurations
+title: kyuwon53 Gitbook
+longtitle: kyuwon lee Gitbook
 author: kyuwon53
 email: kyuwoon369@gmail.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-show_excerpts: true # set to true to show excerpts on the homepage
-url: https://kyuwon53.github.io/
+description: >
+  kyuwon53 기록 
+
+version: 1.0
+gitbook_version: 3.2.3
+
+url: "https://kyuwon53.github.io"
 baseurl: ""
+rss: RSS
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
-plainwhite:
-  name: kyuwon Lee
-  tagline: Developer.
-  date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
-  search: true # set to true to enable searchbar
-  dark_mode: true # set to true to add dark mode toggle
-  portfolio_image: "assets/kyu.jpg" # the path from the base directory of the site to the image to display (no / at the start)
-  html_lang: "ko" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
-  condensed_mobile:
-    - page
-    - post
-  # generate social links in footer
-  social_links:
-    github: kyuwon53
-    linkedIn: in/규원-이-45920a231
-    #dribbble: jekyll
-    #flickr:   jekyll
-    #instagram: jekyll
-    #pinterest: jekyll
-    #youtube: jekyll
-    #facebook: jekyll
-    #soundcloud: jekyll
-    #telegram: jekyll
-    #gitlab: jekyll
-    #email: jekyll
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 3
 
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+# markdown render engine.
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  input: GFM
+  math_engine: mathjax
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    guess_lang: true
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+syntax_highlighter_style: colorful
 
-# Build settings
-theme: plainwhite
+markdown_ext: markdown,mkdown,mkdn,mkd,md
+
+# Permalinks
+# permalink: /:categories/:year-:month-:day-:title:output_ext
+
+exclude:
+  - _drafts
+
+collections:
+  pages:
+    output: true
+    # permalink: /:collection/:path/
+
+destination: ./_site
+incremental: false
+regenerate: true
 
 plugins:
-  - jekyll-seo-tag
-#  - jekyll-feed
+  - jekyll-feed
+  - jemoji
