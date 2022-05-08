@@ -3,7 +3,7 @@ layout: post
 categories: 스프링 테스트
 ---
 
-![APPLICATION_JSON_UTF8](img/UTF8.png)
+![APPLICATION_JSON_UTF8](./img/UTF8.png)
 
 MediaType.APPLICATION_JSON_UTF8은 `@Deprecated` 사용이 권장되지 않음이다. 즉 언젠가 사라질 수 있다는 말이다. 
 
@@ -29,9 +29,9 @@ MediaType.APPLICATION_JSON_UTF8은 `@Deprecated` 사용이 권장되지 않음�
 
 |코드 추가 전 (UTF8 미설정)|
 | :---: |
-|![UTF8미설정](img/UTF8미설정.png)|
+|![UTF8미설정](./img/UTF8미설정.png)|
 |코드 추가 후 (UTF8 설정)|
-|![UTF8설정](img/UTF8설정.png)|
+|![UTF8설정](./img/UTF8설정.png)|
 
 - Header에 `UTF-8`이 들어간 것을 확인할 수 있다. 
 
