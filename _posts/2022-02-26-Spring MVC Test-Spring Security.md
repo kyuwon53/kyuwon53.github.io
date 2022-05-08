@@ -5,7 +5,7 @@ categories: 스프링 오류
 
 스프링 시큐리티를 스프링 MVC 테스트를 진행하려 했으나 계속해서 테스트 실패를 했다. 처음에는 코드에 누락된 부분들이 있나 살펴봤지만 도통 알수가 없었다. 
 
-![](./img/authenticationError.PNG)
+![인증에러](/assets/img/authenticationError.PNG)
 
 알고보니 테스트에서 이미 에러가 나서 안에 로직도 안타는 것이었다. 결론은 MVC Test시에 `MockMvc`에 설정을 해줘야한다. 
 

@@ -13,6 +13,12 @@ url: "https://kyuwon53.github.io"
 baseurl: ""
 rss: RSS
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+      
 toc:
   enabled: true
   h_min: 1

@@ -2,7 +2,7 @@
 layout: post
 categories: 스프링
 ---
-![alt](.\img\SpringBootApplication.png)
+![alt](/assets/img/SpringBootApplication.png)
 
 - @ComponentScan에만 적용된다. 
 - @Entity 스캔 또는 `Spring Data Repository` 스캔에는 영향을 미치지 않는다. 
