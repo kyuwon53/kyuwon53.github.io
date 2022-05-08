@@ -1,7 +1,7 @@
 title: kyuwon 기록
 author: kyuwon53
 email: kyuwoon369@gmail.com
-description:  # this means to ignore newlines until "show_exerpts:"
+description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
@@ -15,7 +15,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: kyuwon Lee
-  tagline: Developer. 
+  tagline: Developer.
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
@@ -23,14 +23,11 @@ plainwhite:
   portfolio_image: "assets/kyu.jpg" # the path from the base directory of the site to the image to display (no / at the start)
   html_lang: "ko" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
   condensed_mobile:
-future                   : true
-published: true
-    #- home
     - page
     - post
   # generate social links in footer
   social_links:
-    github:  kyuwon53
+    github: kyuwon53
     linkedIn: in/규원-이-45920a231
     #dribbble: jekyll
     #flickr:   jekyll
