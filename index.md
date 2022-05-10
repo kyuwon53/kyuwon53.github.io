@@ -1,6 +1,7 @@
 ---
 layout: home
 ---
+#  자라는 개발자 잘하는 개발자되기
 
 개발 기록을 남기자 
 기술, 에러, 회고, 서평, 스터디 기록 
@@ -28,7 +29,8 @@ layout: home
 <p style="color:rgb(70, 70, 70); font-weight:bold; font-size:0.875em;">풀스택 웹개발 <br> 
 <span style="color:grey; font-size:0.875em;">2021.09.01 ~</span> 
 </p>
-<span style="font-size:0.875em;">2021귀속 종합소득세 일반신고서, 근로소득 신고서 개발 </span>
+<p style="font-size:0.875em;">홈택스, 손택스 : 2021귀속 종합소득세 일반신고서, 근로소득 신고서 개발 </p>
+<p style="font-size:0.875em;">홈택스, 손택스 종합소득세 유지 보수</p>
 
 <hr>
 
