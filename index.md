@@ -2,7 +2,7 @@
 layout: home
 ---
 
-## 🌱 자라는 개발자  💡 잘하는 개발자되기
+<p style="font-weight:bolder; font-size:2.325em;"> 🌱 자라는 개발자  💡 잘하는 개발자되기 </p>
 
 개발 기록을 남기자 
 기술, 에러, 회고, 서평, 스터디 기록 
