@@ -35,16 +35,6 @@
                 <div class="body-inner">
                     {%- include body.html -%}
 
-                    <div>
-                        <script src="https://utteranc.es/client.js"
-                        repo="kyuwon53 / kyuwon53.github.io"
-                        issue-term="og:title"
-                        theme="github-light"
-                        crossorigin="anonymous"
-                        async>
-                    </script>
-                    </div>
-
                     {% if page.previous %}
                         <a href="{{site.baseurl}}{{page.previous.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{page.previous.title}}">
                             <i class="fa fa-angle-left"></i>
@@ -60,6 +50,15 @@
                             <i class="fa fa-angle-right"></i>
                         </a>
                     {% endif %}
+                </div>
+                <div class="utterances">
+                    <script src="https://utteranc.es/client.js"
+                    repo="kyuwon53 / kyuwon53.github.io"
+                    issue-term="og:title"
+                    theme="github-light"
+                    crossorigin="anonymous"
+                    async>
+                </script>
                 </div>
             </div>
 
