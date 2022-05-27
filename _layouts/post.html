@@ -30,11 +30,22 @@
                             <a href="." >{{ site.title | escape }}</a>
                         {% endif %}
                     </h1>
+                    
                 </div>
 
                 <div class="body-inner">
+                    
                     {%- include body.html -%}
-
+                    <div>
+                        <script src="https://utteranc.es/client.js"
+                        repo="kyuwon53/kyuwon53.github.io"
+                        issue-term="pathname"
+                        label="comment"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async>
+                     </script>  
+                    </div>
                     {% if page.previous %}
                         <a href="{{site.baseurl}}{{page.previous.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{page.previous.title}}">
                             <i class="fa fa-angle-left"></i>
@@ -50,9 +61,11 @@
                             <i class="fa fa-angle-right"></i>
                         </a>
                     {% endif %}
+                    
                 </div>
+                
             </div>
-
+            
             <script>
             var gitbook = gitbook || [];
             gitbook.push(function() {
