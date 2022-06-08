@@ -6,4 +6,9 @@ category: Jekyll
 layout: post
 ---
 
-This is an contact page.
+* :email: Email. 
+  * kyuwon369@gmail.com
+  * lkw2v@naver.com
+
+* 😼 Github. https://github.com/kyuwon53
+* blog https://kyuwon53.github.io/
