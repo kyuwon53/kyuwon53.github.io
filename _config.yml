@@ -5,7 +5,7 @@ author: kyuwon53
 email: kyuwoon369@gmail.com
 description: >
   kyuwon53 기록 
-
+published: true
 version: 1.0
 gitbook_version: 3.2.3
 
@@ -54,6 +54,7 @@ collections:
 destination: ./_site
 incremental: false
 regenerate: true
+feature: true
 
 plugins:
   - jekyll-feed
