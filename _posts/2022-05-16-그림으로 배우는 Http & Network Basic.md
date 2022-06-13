@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 서평 Http
+categories: 서평
 ---
 
 ![http & network basic](http://image.yes24.com/momo/TopCate448/MidCate010/44791452.jpg)

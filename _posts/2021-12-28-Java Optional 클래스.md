@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 자바
+categories: 공부 자바
 ---
 
 ## java.util.Optional<T> 클래스 

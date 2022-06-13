@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 코드숨 회고
+categories: 회고 코드숨 
 ---
 
 ## Facts (사실, 객관)

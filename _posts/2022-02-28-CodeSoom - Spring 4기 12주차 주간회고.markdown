@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 코드숨 스프링 회고
+categories: 회고 코드숨
 ---
 
 ## 🧐 이번 주 진행사항? 

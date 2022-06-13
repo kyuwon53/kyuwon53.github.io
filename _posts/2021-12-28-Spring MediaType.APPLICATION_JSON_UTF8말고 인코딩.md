@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 스프링 테스트
+categories: 스프링
 ---
 
 ![APPLICATION_JSON_UTF8](/assets/img/UTF8.png)

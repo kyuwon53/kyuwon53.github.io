@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 스프링 오류
+categories: 공부 스프링
 ---
 
 컨트롤러 테스트 도중 

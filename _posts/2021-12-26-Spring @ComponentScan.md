@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 스프링
+categories: 공부 스프링
 ---
 ![alt](/assets/img/SpringBootApplication.png)
 
