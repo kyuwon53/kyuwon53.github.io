@@ -7,6 +7,9 @@ layout: home
 개발 기록을 남기자 
 기술, 에러, 회고, 서평, 스터디 기록 
 
+[오늘은 무엇을 배웠나요? 👐 T.I.L](https://github.com/kyuwon53/TIL)   
+[파이썬으로 푸는 알고리즘 ⚙️ ](https://github.com/kyuwon53/Python-algorithm)
+
 ### License
 
 This work is open sourced under the Apache License, Version 2.0.
