@@ -9,6 +9,7 @@ layout: home
 
 [오늘은 무엇을 배웠나요? 👐 T.I.L](https://github.com/kyuwon53/TIL)   
 [파이썬으로 푸는 알고리즘 ⚙️ ](https://github.com/kyuwon53/Python-algorithm)
+[무슨 책을 읽고 있나요? 📚 ](https://github.com/kyuwon53/library_books_record)
 
 ### License
 
