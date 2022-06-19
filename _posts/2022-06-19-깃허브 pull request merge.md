@@ -18,7 +18,7 @@ categories: 공부 정리
 
 `Squash and merge` 옵션은 pull request commit이 단일 커밋으로 묶여서 base branch에 merge된다. 기여자의 개별 커밋 대신 커밋이 하나의 커밋으로 결합되고 기본 브랜치로 병합된다. [fast-forward](https://git-scm.com/docs/git-merge#_fast_forward_merge) 옵션을 사용해서 merge된다.
 
-![Squash and merge: D + E into F in Main](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges)
+![Squash and merge: D + E into F in Main](https://docs.github.com/assets/cb-5742/images/help/pull_requests/commit-squashing-diagram.png)
 
 * `squash and merge`는 저장소에 쓰기 권한이 있어야 하고 레파지토리에서 `squash and merge`을 허용해야 한다.
 
