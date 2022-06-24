@@ -2,6 +2,8 @@
 layout: home
 ---
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fkyuwon53.github.io%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23FFFFFF&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 <p style="font-weight:bolder; font-size:2.325em;"> 🌱 자라는 개발자  💡 잘하는 개발자되기 </p>
 
 개발 기록을 남기자 
