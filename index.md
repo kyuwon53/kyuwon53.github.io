@@ -10,8 +10,9 @@ layout: home
 기술, 에러, 회고, 서평, 스터디 기록 
 
 [오늘은 무엇을 배웠나요? 👐 T.I.L](https://github.com/kyuwon53/TIL)   
-[파이썬으로 푸는 알고리즘 ⚙️ ](https://github.com/kyuwon53/Python-algorithm)
-[무슨 책을 읽고 있나요? 📚 ](https://github.com/kyuwon53/library_books_record)
+[파이썬으로 푸는 알고리즘 ⚙️ ](https://github.com/kyuwon53/Python-algorithm)   
+[무슨 책을 읽고 있나요? 📚 ](https://github.com/kyuwon53/library_books_record)   
+[📈 데이터 중심 애플리케이션 설계 wiki 🖋](https://codesoom-bookclub.notion.site/codesoom-bookclub/f2e834292817487a8d9429520de81ef1)   
 
 ### License
 
