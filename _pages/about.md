@@ -14,7 +14,7 @@ Github : [https://github.com/kyuwon53](https://github.com/kyuwon53)
 Web : [https://kyuwon53.github.io/](https://kyuwon53.github.io/)   
 Email: kyuwoon369@gmail.com / lkw2v@naver.com   
 
-Java & Spring 기반의 1년차 주니어 백엔드 개발자로 현재 [홈택스/손택스](https://www.hometax.go.kr/websquare/websquare.html?w2xPath=/ui/pp/index.xml) 를 만들고 있습니다. 5월에 종합소득세 신고 서비스를 오픈하여 **1000만건** 신고를 접수했습니다. 팀 내 종합소득세 일반신고서 대민 서비스를 맡아 풀스택 엔지니어로 업무를 하고 있습니다. 
+Java & Spring 기반의 1년차 주니어 백엔드 개발자로 현재 [홈택스/손택스](https://www.hometax.go.kr/websquare/websquare.html?w2xPath=/ui/pp/index.xml) 를 만들고 있습니다. 팀 내 종합소득세 일반신고서 대민 서비스를 맡아 풀스택 엔지니어로 업무를 하고 있습니다. 5월에 종합소득세 신고 서비스를 오픈하여 **1000만건** 신고를 접수했습니다.  
 
 > 좋은 프로그래밍 책을 두 달에 한 권, 즉 일주일에 대략 35페이지 정도만 읽어도 당신은 이내 이 분야에 대해서 확실한 감을 갖게 될 것이며 주변의 거의 모든 이들과 구별되는 수준으로 올라설 것이다. -스티브 멕코넬 <code complete>-   
     
