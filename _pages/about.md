@@ -71,7 +71,7 @@ Java & Spring 기반의 1년차 주니어 백엔드 개발자로 현재 [홈택�
 ## Skill 
 업무 또는 프로젝트 때 사용중 혹은 사용했던 기술
 
-* Java, NodeJs
+* Java
 * Spring Boot, Spring MVC, Spring Security, Spring Data JPA
 * Junit5, Mockito
 * Gradle, Maven
