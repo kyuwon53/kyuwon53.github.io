@@ -9,8 +9,7 @@ layout: post
 
 이메일: kyuwoon369@gmail.com / lkw2v@naver.com   
 
-[홈택스/손택스](https://www.hometax.go.kr/websquare/websquare.html?w2xPath=/ui/pp/index.xml) 종합소득세 일반신고서 대민 서비스를 맡아 풀 스택 웹(자바) 엔지니어로 업무를 하고 있습니다.
-5월에 종합소득세 신고 서비스를 오픈하여 **1000만건** 신고를 접수했습니다.  
+[홈택스/손택스](https://www.hometax.go.kr/websquare/websquare.html?w2xPath=/ui/pp/index.xml) 종합소득세 일반신고서 대민 서비스를 맡아 풀 스택 웹(자바) 엔지니어로 근무했습니다. 5월에 종합소득세 신고 서비스를 오픈하여 **1000만건** 신고를 마감했습니다. 
 
 모르는 것을 모른다고 빨리 무지를 드러냈을 때 훨씬 더 빠르고 양질의 정보를 얻을 수 있음을 경험했습니다. 그
 래서 모르는 것을 인정하고 무지목록을 작성하여 책, 질문, 검색 등을 통해 다른 분들의 양질의 정보를 모아 상황
@@ -25,8 +24,9 @@ layout: post
 ---
 
 ## 🏃 경력    
+### 📎 Makinarocks: Backend Engineer 2022.10 ~ 현재 
 
-### 📎 유플러스 아이티: Software Engineer 2021.09 ~ 현재
+### 📎 유플러스 아이티: Software Engineer 2021.09 ~ 2022.10
 #### ● 홈택스 & 손택스 근로소득자 신고 경정청구 21귀속 오픈 개발 
 ##### 2022.06 - 2022.07
 
