@@ -52,7 +52,7 @@ collections:
     # permalink: /:collection/:path/
 
 destination: ./_site
-incremental: false
+incremental: true
 regenerate: true
 feature: true
 
