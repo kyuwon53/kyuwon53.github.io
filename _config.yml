@@ -41,7 +41,7 @@ syntax_highlighter_style: colorful
 markdown_ext: markdown,mkdown,mkdn,mkd,md
 
 # Permalinks
-# permalink: /:categories/:year-:month-:day-:title:output_ext
+permalink: /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
   - _drafts
@@ -49,7 +49,7 @@ exclude:
 collections:
   pages:
     output: true
-    # permalink: /:collection/:path/
+    permalink: /:collection/:path/
 
 destination: ./_site
 incremental: true
