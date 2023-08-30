@@ -4,12 +4,27 @@
 
         {%- include head.html -%}
 
-        {% assign reversed_posts = site.posts | reverse %}
+        {% assign reversed_posts = site.posts %}
 
         {% if reversed_posts %}
             <link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
         {% endif %}
     </head>
+    <header class="site-category">
+        <ul>
+          
+          {% assign pages_list = site.pages %}
+          {% for node in pages_list %}
+            {% if node.title != null %}
+              {% if node.layout == "category" %}
+                <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+                href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          
+      </ul>
+      </header>
     <body>
         <div class="book">
 
