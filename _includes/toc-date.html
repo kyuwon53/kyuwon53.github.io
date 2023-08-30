@@ -6,6 +6,19 @@
         <div id="book-search-input-link" role="search">
             <a href="{{site.baseurl}}/search.html">Click to Search</a>
         </div>
+        <ul>
+    
+            {% assign pages_list = site.pages %}
+            {% for node in pages_list %}
+              {% if node.title != null %}
+                {% if node.layout == "category" %}
+                  <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+                  href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            
+        </ul>
         <ul class="summary">
             {% if page.url == "/index.html" or page.url == "/" %}
             <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
