@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 공부, jpa ,자바
+categories: 공부 jpa 자바
 ---
 
 jpa를 사용하여 삭제할 때, 기본 제공되는 메서드에는 `delete`와 `deleteById`가 있다. 
