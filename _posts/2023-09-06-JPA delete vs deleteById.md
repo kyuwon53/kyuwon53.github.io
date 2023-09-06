@@ -12,7 +12,7 @@ jpa를 사용하여 삭제할 때, 기본 제공되는 메서드에는 `delete`�
 ![예전 deleteById](/assets/img/regacy%20deleteById.png)
 
 
-진짜 그런가? `SimpleJpaRepository` 구현 클래스를 직접 들어가보니 ???? 바껴있었다. 현재 `SimpleJpaRepository`에서 `deleteById`구현은 
+진짜 그런가? `SimpleJpaRepository` 구현 클래스를 직접 들어가보니 알고있던 것과 다르게 바껴있었다. 현재 `SimpleJpaRepository`에서 `deleteById`구현은 
 
 ![new deleteById](/assets/img/new%20deleteById.png)
 exception을 던지지 않고, `ifPresent`를 사용하여 이미 가지고 있다면 `delete` 함수를 호출하도록 변경되었다.
@@ -24,6 +24,6 @@ exception을 던지지 않고, `ifPresent`를 사용하여 이미 가지고 있�
 그럼 언제 delete와 deleteById를 써야 하는가?
 
 - 삭제 대상이 존재하는 경우 삭제하고 없다면 아무 조치를 안 해도 된다 -> `deleteById`
-- 삭제 대상이 존재라는 경우 삭제하고, 없다면 예외를 던진다 -> `findById` + `delete`
+- 삭제 대상이 존재하는 경우 삭제하고, 없다면 예외를 던진다 -> `findById` + `delete`
 
 커스텀 예외 처리를 해야 하는 경우 `deleteById`를 사용해도 무관한 거 아니야? 할 수 있지만, findById를 두 번 호출하는 것이기 때문에 후자가 낫다.
