@@ -6,8 +6,10 @@ layout: home
 
 <p style="font-weight:bolder; font-size:2.325em;"> 🌱 자라는 개발자  💡 다정한 개발자되기 </p>
 
-개발 기록을 남기자 
-기술, 에러, 회고, 서평, 스터디 기록    
+개발 기록을 남기자   
+어디서 읽은 것들, 책의 내용을 그대로 복사하는 것이 아니라 습득하고 깨달은 것들을 나만의 것으로 소화하고 기록하자 
+
+기술, 회고, 서평, 스터디 기록    
 
 [Resume](https://kyuwon53.github.io/pages/about.html)    
 [Contact](https://kyuwon53.github.io/pages/contact.html)        
