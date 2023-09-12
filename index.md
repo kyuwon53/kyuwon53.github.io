@@ -11,8 +11,8 @@ layout: home
 
 기술, 회고, 서평, 스터디 기록    
 
-[Resume](https://kyuwon53.github.io/pages/about.html)    
-[Contact](https://kyuwon53.github.io/pages/contact.html)        
+[Resume](https://kyuwon53.github.io/pages/about/)    
+[Contact](https://kyuwon53.github.io/pages/contact/)        
 Github : [https://github.com/kyuwon53](https://github.com/kyuwon53)   
 Web : [https://kyuwon53.github.io/](https://kyuwon53.github.io/)   
 LinkedIn: [이규원](https://www.linkedin.com/in/%EA%B7%9C%EC%9B%90-%EC%9D%B4-45920a231/)
