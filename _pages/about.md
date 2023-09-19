@@ -127,6 +127,8 @@ skill : Python, Django, PostgreSQL, Docker, Linux
 - 피플웨어
 - 관계형 데이터 베이스 실전 입문
 - 프로그래밍 심리학
+- 디자인 패턴의 아름다움
+- 알고리즘 (로버트 세지윅)
 
 #### 2022
 
