@@ -69,10 +69,6 @@ LinkedIn: [이규원](https://www.linkedin.com/in/%EA%B7%9C%EC%9B%90-%EC%9D%B4-4
 - Do it! HTML+CSS+자바스크립트 웹 표준의 정석
 - 모두의 SQL
 
-#### 무슨 책을 읽고 있나요? 📚
-- [생각하는 늑대 타스케](https://www.notion.so/kyuwon-lee/06234512f5dc4b5f9d8d08a8d2a4870a)
-- [스프링 인  액션](https://www.notion.so/kyuwon-lee/1-37a09f2cff4845ef8ad7c362cc3d4096)
-
 ### License
 
 This work is open sourced under the Apache License, Version 2.0.
