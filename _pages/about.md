@@ -129,6 +129,7 @@ skill : Python, Django, PostgreSQL, Docker, Linux
 - 프로그래밍 심리학
 - 디자인 패턴의 아름다움
 - 알고리즘 (로버트 세지윅)
+- 업무 시각화 
 
 #### 2022
 
