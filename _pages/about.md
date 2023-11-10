@@ -133,6 +133,7 @@ skill : Python, Django, PostgreSQL, Docker, Linux
 - 디자인 패턴의 아름다움
 - 알고리즘 (로버트 세지윅)
 - 업무 시각화 
+- 자바 코딩의 기술
 
 #### 2022
 
