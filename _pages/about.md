@@ -134,6 +134,7 @@ skill : Python, Django, PostgreSQL, Docker, Linux
 - 알고리즘 (로버트 세지윅)
 - 업무 시각화 
 - 자바 코딩의 기술
+- 모던 자바 인 액션
 
 #### 2022
 
