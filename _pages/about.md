@@ -136,6 +136,7 @@ skill : Python, Django, PostgreSQL, Docker, Linux
 - 자바 코딩의 기술
 - 모던 자바 인 액션
 - 엔터프라이즈 애플리케이션 아키텍처 패턴
+- 생각하는 늑대 타스케
 
 #### 2022
 
