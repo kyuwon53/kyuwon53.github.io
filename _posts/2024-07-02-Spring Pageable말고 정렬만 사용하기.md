@@ -88,3 +88,34 @@ applySorting(params.getSort(), query, new PathBuilder(Measure.class, "measure"))
 
 고민만 하던 것을 실제로 구현하고 실무에 사용해봤다. 
 
+### +) 
+`@ModelAttribute`로 쿼리 파라미터를 바인딩 해주고있는데, 문제가 발생했다. 
+`sort=timestamp,desc` 라고 요청을 보냈을 때, 예상과 다르게 동작했다. 
+
+- 예상
+
+```java
+new String[]{"timestamp,desc"}
+```
+
+- 실제
+
+```java
+new String[]{"timestamp", "desc"}
+```
+
+원래대로 (정렬 적용 엔티티 필드,방향) 조합으로 들어오면 `,` 구분자로 문자열을 잘라서 order를 만들어주는데, 위에 처럼 동작하면 `timestamp, asc` , `desc, asc`로 동작하여 정렬이 되지 않았다. 
+
+정렬이 여러개인 경우 예상대로 동작하고, 정렬 조건이 1개인 경우에만 발생하는 케이스라 해당 케이스일 경우 다시 결합해주는 로직을 추가했다. 
+
+```java
+private static String[] mergeSortFields(String[] sort) {
+        if (sort.length == 2) {
+            String second = sort[1].toUpperCase();
+            if (second.equals(Order.DESC.name()) || second.equals(Order.ASC.name())) {
+                sort = new String[]{String.join(",", sort)};
+            }
+        }
+        return sort;
+    }
+```
