@@ -18,29 +18,41 @@ Github : [https://github.com/kyuwon53](https://github.com/kyuwon53)
 Web : [https://kyuwon53.github.io/](https://kyuwon53.github.io/)   
 LinkedIn: [이규원](https://www.linkedin.com/in/%EA%B7%9C%EC%9B%90-%EC%9D%B4-45920a231/)
 
-## 📚 읽은 책
+## 📚 읽은 책 (50)
 
-#### 2023
+<details>
+<summary>2024 (1)</summary>
+<ul>
+<li> 옥상에서 만나요 </li>
+</ul>
+</details>
 
-- 면접을 위한 CS 전공지식 노트
-- 파이브 라인스 오브 코드
-- 리얼 마이에스큐엘 8.0 2권
-- 하루에 한 걸음씩 행복해지기
-- 한 권으로 읽는 컴퓨터 구조와 프로그래밍
-- 웹 개발자를 위한 대규모 서비스를 지탱하는 기술 
-- 피플웨어
-- 관계형 데이터 베이스 실전 입문
-- 프로그래밍 심리학
-- 디자인 패턴의 아름다움
-- 알고리즘 (로버트 세지윅)
-- 업무 시각화
-- 자바 코딩의 기술
-- 모던 자바 인 액션
-- 엔터프라이즈 애플리케이션 아키텍처 패턴
-- 생각하는 늑대 타스케
-- 모든 삶은 흐른다 
+<details>
+<summary>2023 (17)</summary>
 
-#### 2022
+<ul>
+<li> 면접을 위한 CS 전공지식 노트 </li>
+<li> 파이브 라인스 오브 코드</li>
+<li> 리얼 마이에스큐엘 8.0 2권</li>
+<li> 하루에 한 걸음씩 행복해지기</li>
+<li> 한 권으로 읽는 컴퓨터 구조와 프로그래밍</li>
+<li> 웹 개발자를 위한 대규모 서비스를 지탱하는 기술 </li>
+<li> 피플웨어</li>
+<li> 관계형 데이터 베이스 실전 입문</li>
+<li> 프로그래밍 심리학</li>
+<li> 디자인 패턴의 아름다움</li>
+<li> 알고리즘 (로버트 세지윅)</li>
+<li> 업무 시각화</li>
+<li> 자바 코딩의 기술</li>
+<li> 모던 자바 인 액션</li>
+<li> 엔터프라이즈 애플리케이션 아키텍처 패턴</li>
+<li> 생각하는 늑대 타스케</li>
+<li> 모든 삶은 흐른다 </li>
+</ul>
+</details>
+
+<details>
+<summary>2022 (18)</summary>
 
 - 리얼 마이에스큐엘 8.0 1권
 - 코딩 인터뷰
@@ -61,7 +73,11 @@ LinkedIn: [이규원](https://www.linkedin.com/in/%EA%B7%9C%EC%9B%90-%EC%9D%B4-4
 - 그림으로 배우는 프로그래밍 구조  
 - 자바 ORM 표준 JPA 프로그래밍
 
-#### 2021
+</details>
+
+<details>
+<summary>2021 (14) </summary>
+
 - 팀 개발을 위한 Git GitHub 시작하기
 - 객체지향의 사실과 오해 역할, 책임, 협력 관점에서 본 객체지향
 - 리팩터링 2판
@@ -76,6 +92,8 @@ LinkedIn: [이규원](https://www.linkedin.com/in/%EA%B7%9C%EC%9B%90-%EC%9D%B4-4
 - Do it! 오라클로 배우는 데이터베이스 입문
 - Do it! HTML+CSS+자바스크립트 웹 표준의 정석
 - 모두의 SQL
+
+</details>
 
 ### License
 
