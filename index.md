@@ -19,16 +19,17 @@ Web : [https://kyuwon53.github.io/](https://kyuwon53.github.io/)
 LinkedIn: [이규원](https://www.linkedin.com/in/%EA%B7%9C%EC%9B%90-%EC%9D%B4-45920a231/)
 
 ## 📚 읽은 책 (50)
+<span style='background-color:#fff5b1; font-weight:bolder; font-size:0.75em;'>연도를 클릭하면 읽은 책 목록을 확인할 수 있습니다</span>
 
 <details>
-<summary>2024 (1)</summary>
+<summary style='font-weight:bolder; font-size:1.25em;'> :open_book: 2024 (1)</summary>
 <ul>
 <li> 옥상에서 만나요 </li>
 </ul>
 </details>
 
 <details>
-<summary>2023 (17)</summary>
+<summary stype='font-weight:bolder'> :orange_book: 2023 (17)</summary>
 
 <ul>
 <li> 면접을 위한 CS 전공지식 노트 </li>
@@ -52,7 +53,7 @@ LinkedIn: [이규원](https://www.linkedin.com/in/%EA%B7%9C%EC%9B%90-%EC%9D%B4-4
 </details>
 
 <details>
-<summary>2022 (18)</summary>
+<summary stype='font-weight:bolder'> :green_book: 2022 (18)</summary>
 
 <li> 리얼 마이에스큐엘 8.0 1권</li>
 <li> 코딩 인터뷰</li>
@@ -76,7 +77,7 @@ LinkedIn: [이규원](https://www.linkedin.com/in/%EA%B7%9C%EC%9B%90-%EC%9D%B4-4
 </details>
 
 <details>
-<summary>2021 (14) </summary>
+<summary stype='font-weight:bolder;'> :blue_book: 2021 (14) </summary>
 
 <li> 팀 개발을 위한 Git GitHub 시작하기</li>
 <li> 객체지향의 사실과 오해 역할, 책임, 협력 관점에서 본 객체지향</li>
