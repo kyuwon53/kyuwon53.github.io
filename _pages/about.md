@@ -21,7 +21,14 @@ layout: post
 ---
 
 ## 🏃 경력    
-### 📎 Makinarocks: Backend Engineer 2022.10 ~ 현재 
+### 📎 한빛앤 : 선임 개발자 2024.09 ~ 현재 
+- 데이터 마이그레이션
+- DB 마이그레이션
+- 서버 api 설계 및 구현 
+
+skill : Kotlin, java, python, postgresql, mysql 
+
+### 📎 Makinarocks: Backend Engineer 2022.10 ~ 2024.08 
 
 #### MRXray 고도화 
 ##### 2023.07 ~
