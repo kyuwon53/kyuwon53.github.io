@@ -26,7 +26,7 @@ layout: post
 - DB 마이그레이션
 - 서버 api 설계 및 구현 
 
-skill : Kotlin, java, python, postgresql, mysql 
+skill : Kotlin, Java, Python, Postgresql, Mysql 
 
 ### 📎 Makinarocks: Backend Engineer 2022.10 ~ 2024.08 
 
@@ -193,6 +193,10 @@ skill : Python, Django, PostgreSQL, Docker, Linux
 ---
 
 ## ✏️ 교육
+### 📎 NEXTSTEP 
+#### TDD 이펙티브 코틀린 8기 
+##### 2024.11 ~ 2024.12
+
 ### 📎 코드숨 
 #### 스프링 4기 
 ##### 2021.11 ~ 2022.02
