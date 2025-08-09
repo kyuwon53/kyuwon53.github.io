@@ -1,4 +1,5 @@
 ---
+title: kotlinlogging-vs-kloggin
 layout: post
 categories: 글
 tags: kotlin, logger
