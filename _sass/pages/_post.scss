@@ -45,6 +45,18 @@ header {
   }
 }
 
+article[data-toc] > .content {
+  @include mx.pl-pr(1.75rem);
+
+  @include bp.lt(bp.get(md)) {
+    @include mx.pl-pr(1.25rem);
+  }
+
+  @include bp.lt(bp.get(sm)) {
+    @include mx.pl-pr(1rem);
+  }
+}
+
 .post-tail-wrapper {
   @extend %text-sm;
 

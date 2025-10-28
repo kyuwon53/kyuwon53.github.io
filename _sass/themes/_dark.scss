@@ -12,8 +12,10 @@
   --text-muted-highlight-color: #aeaeae;
   --heading-color: #cccccc;
   --label-color: #a7a7a7;
-  --blockquote-border-color: rgb(66, 66, 66);
-  --blockquote-text-color: #868686;
+  --blockquote-border-color: #3d4758;
+  --blockquote-text-color: #c3ccd7;
+  --blockquote-bg: rgba(37, 45, 62, 0.82);
+  --blockquote-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
   --link-color: rgb(138, 180, 248);
   --link-underline-color: rgb(82, 108, 150);
   --button-bg: #1e1e1e;
@@ -99,15 +101,17 @@
   --timeline-year-dot-color: var(--timeline-color);
 
   /* Code highlight colors */
-  --language-border-color: #2d2d2d;
-  --highlight-bg-color: #151515;
+  --language-border-color: #2a313d;
+  --highlight-bg-color: #121820;
   --highlighter-rouge-color: #c9def1;
   --highlight-lineno-color: #808080;
-  --inline-code-bg: rgba(255, 255, 255, 0.05);
-  --code-color: #b0b0b0;
-  --code-header-text-color: #6a6a6a;
-  --code-header-muted-color: #353535;
-  --code-header-icon-color: #565656;
+  --inline-code-bg: rgba(59, 135, 227, 0.18);
+  --inline-code-border-color: rgba(136, 170, 255, 0.35);
+  --code-color: #d7deea;
+  --code-header-text-color: #aab7c6;
+  --code-header-muted-color: #2a303a;
+  --code-header-icon-color: #8fa0b7;
+  --code-header-bg: rgba(32, 39, 54, 0.88);
   --clipboard-checked-color: #2bcc2b;
   --filepath-text-color: #cacaca;
 

@@ -13,6 +13,7 @@
   @extend %rounded;
   @extend %code-snippet-bg;
 
+  border: 1px solid var(--language-border-color);
   overflow: auto;
   padding-bottom: 0.75rem;
 
@@ -69,6 +70,7 @@ code {
     word-break: break-word;
     border-radius: v.$radius-sm;
     background-color: var(--inline-code-bg);
+    border: 1px solid var(--inline-code-border-color, transparent);
   }
 
   &.filepath {
@@ -110,7 +112,9 @@ div[class^='language-'] {
   @extend %rounded;
   @extend %code-snippet-bg;
 
-  box-shadow: var(--language-border-color) 0 0 0 1px;
+  border: 1px solid var(--language-border-color);
+  box-shadow: none;
+  overflow: hidden;
 
   .content > & {
     @include mx.ml-mr(-1rem);
@@ -149,11 +153,19 @@ div[class^='language-'] {
         margin-left: calc(($dot-margin + v.$code-dot-size) / 2 * -1);
       }
     }
+
+    margin: 0;
+    padding: 0 1rem;
+    background-color: var(--code-header-bg);
+    border-bottom: 1px solid var(--language-border-color);
   }
 
   .highlight {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    border: 0;
+    border-top: 1px solid var(--language-border-color);
+    padding: 1rem 1.25rem 1.25rem;
   }
 }
 
