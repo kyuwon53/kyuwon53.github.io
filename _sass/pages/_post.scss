@@ -357,11 +357,23 @@ article[data-toc] > .content {
   z-index: 4;
   margin: 0 -1rem 0.75rem;
   height: v.$topbar-height;
-  background: var(--toc-bar-bg, var(--topbar-bg));
+  background-color: var(--toc-bar-bg, var(--topbar-bg));
   border-bottom: 1px solid var(--main-border-color);
   box-shadow: var(--toc-bar-shadow, var(--topbar-shadow, none));
   color: var(--topbar-text-color);
   transition: all 0.2s ease-in-out;
+  position: relative;
+  padding: 0 1rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: inherit;
+    opacity: 1;
+    border-radius: inherit;
+    z-index: -1;
+  }
 
   @extend %btn-color;
 
