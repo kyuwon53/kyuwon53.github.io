@@ -56,12 +56,30 @@ img {
 
 blockquote {
   border-left: 0.3rem solid var(--blockquote-border-color);
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.5rem 1.25rem 3rem;
   color: var(--blockquote-text-color);
   background-color: var(--blockquote-bg);
   border-radius: v.$radius-lg;
   box-shadow: var(--blockquote-shadow, none);
+  position: relative;
   margin-top: 0.5rem;
+
+  &:not([class^='prompt-'])::before {
+    content: '\201C';
+    position: absolute;
+    top: 0.65rem;
+    left: 1.1rem;
+    font-size: 2.8rem;
+    line-height: 1;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: var(--blockquote-icon-color, var(--blockquote-border-color));
+    opacity: 0.45;
+    pointer-events: none;
+  }
+
+  > :first-child {
+    margin-top: 0;
+  }
 
   > p:last-child {
     margin-bottom: 0;

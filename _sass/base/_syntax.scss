@@ -14,8 +14,10 @@
   @extend %code-snippet-bg;
 
   border: 1px solid var(--language-border-color);
+  border-left: 0.35rem solid var(--code-accent-color, var(--link-color));
   overflow: auto;
   padding-bottom: 0.75rem;
+  box-shadow: var(--code-block-shadow, none);
 
   @at-root figure#{&} {
     @extend %code-snippet-bg;
@@ -66,11 +68,14 @@ code {
 
   &.highlighter-rouge {
     font-size: v.$code-font-size;
-    padding: 3px 5px;
+    padding: 0.25rem 0.45rem;
     word-break: break-word;
     border-radius: v.$radius-sm;
     background-color: var(--inline-code-bg);
-    border: 1px solid var(--inline-code-border-color, transparent);
+    color: var(--inline-code-color, var(--code-color));
+    box-shadow: 0 0 0 1px var(--inline-code-border-color, transparent);
+    border: 0;
+    font-weight: 500;
   }
 
   &.filepath {
@@ -113,8 +118,10 @@ div[class^='language-'] {
   @extend %code-snippet-bg;
 
   border: 1px solid var(--language-border-color);
-  box-shadow: none;
+  border-left: 0.35rem solid var(--code-accent-color, var(--link-color));
+  box-shadow: var(--code-block-shadow, none);
   overflow: hidden;
+  position: relative;
 
   .content > & {
     @include mx.ml-mr(-1rem);
@@ -129,6 +136,11 @@ div[class^='language-'] {
   }
 
   .code-header {
+    margin: 0;
+    padding: 0 1.25rem 0 1.6rem;
+    background-color: var(--code-header-bg);
+    border-bottom: 1px solid var(--language-border-color);
+
     @include bp.sm {
       @include mx.ml-mr(0);
 
@@ -153,11 +165,6 @@ div[class^='language-'] {
         margin-left: calc(($dot-margin + v.$code-dot-size) / 2 * -1);
       }
     }
-
-    margin: 0;
-    padding: 0 1rem;
-    background-color: var(--code-header-bg);
-    border-bottom: 1px solid var(--language-border-color);
   }
 
   .highlight {
@@ -165,7 +172,10 @@ div[class^='language-'] {
     border-top-right-radius: 0;
     border: 0;
     border-top: 1px solid var(--language-border-color);
-    padding: 1rem 1.25rem 1.25rem;
+    border-left: 0;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 1.25rem 1.5rem 1.6rem 1.8rem;
   }
 }
 
@@ -235,6 +245,7 @@ div {
     width: v.$code-header-height;
     padding: 0;
     background-color: inherit;
+    transition: all 0.2s ease-in-out;
 
     i {
       color: var(--code-header-icon-color);
@@ -255,10 +266,10 @@ div {
     }
 
     &:not([timeout]):hover {
-      background-color: rgba(128, 128, 128, 0.37);
+      background-color: rgba(92, 115, 249, 0.15);
 
       i {
-        color: white;
+        color: var(--code-accent-color, var(--link-color));
       }
     }
   }
