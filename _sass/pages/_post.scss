@@ -354,11 +354,14 @@ article[data-toc] > .content {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   margin: 0 -1rem;
   height: v.$topbar-height;
-  background: var(--main-bg);
+  background: var(--topbar-bg);
   border-bottom: 1px solid var(--main-border-color);
+  box-shadow: var(--topbar-shadow, none);
+  backdrop-filter: blur(var(--topbar-blur, 0));
+  -webkit-backdrop-filter: blur(var(--topbar-blur, 0));
   transition: all 0.2s ease-in-out;
 
   @extend %btn-color;
