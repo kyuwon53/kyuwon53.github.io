@@ -271,6 +271,11 @@ article[data-toc] > .content {
   max-height: 100vh;
   scrollbar-width: none;
   margin-top: 2rem;
+  background-color: var(--toc-wrapper-bg, var(--main-bg));
+  border: 1px solid var(--main-border-color);
+  border-radius: v.$radius-lg;
+  box-shadow: var(--toc-wrapper-shadow, none);
+  padding: 1.25rem 1.5rem;
 
   &:not(.invisible) {
     -webkit-animation: fade-up 0.8s;
@@ -327,10 +332,18 @@ article[data-toc] > .content {
     @extend %top-cover;
 
     margin-bottom: -4rem;
+    background: linear-gradient(
+      var(--toc-wrapper-bg, var(--main-bg)) 55%,
+      transparent
+    );
   }
 
   &::before {
     @extend %top-cover;
+    background: linear-gradient(
+      var(--toc-wrapper-bg, var(--main-bg)) 55%,
+      transparent
+    );
   }
 
   &::after {
@@ -340,11 +353,10 @@ article[data-toc] > .content {
     width: 15%;
     height: 2.25rem;
     margin-left: -1px;
-    background: linear-gradient(transparent, var(--main-bg) 70%);
-  }
-
-  > * {
-    @extend %panel-border;
+    background: linear-gradient(
+      transparent,
+      var(--toc-wrapper-bg, var(--main-bg)) 70%
+    );
   }
 }
 
