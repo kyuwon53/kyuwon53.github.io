@@ -374,7 +374,6 @@ article[data-toc] > .content {
   box-shadow: var(--toc-bar-shadow, var(--topbar-shadow, none));
   color: var(--topbar-text-color);
   transition: all 0.2s ease-in-out;
-  position: relative;
   padding: 0 1rem;
 
   &::before {
