@@ -354,14 +354,13 @@ article[data-toc] > .content {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 2;
-  margin: 0 -1rem;
+  z-index: 4;
+  margin: 0 -1rem 0.75rem;
   height: v.$topbar-height;
-  background: var(--topbar-bg);
+  background: var(--toc-bar-bg, var(--topbar-bg));
   border-bottom: 1px solid var(--main-border-color);
-  box-shadow: var(--topbar-shadow, none);
-  backdrop-filter: blur(var(--topbar-blur, 0));
-  -webkit-backdrop-filter: blur(var(--topbar-blur, 0));
+  box-shadow: var(--toc-bar-shadow, var(--topbar-shadow, none));
+  color: var(--topbar-text-color);
   transition: all 0.2s ease-in-out;
 
   @extend %btn-color;
