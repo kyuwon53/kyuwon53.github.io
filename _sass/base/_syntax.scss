@@ -72,7 +72,7 @@ code {
     word-break: break-word;
     border-radius: v.$radius-sm;
     background-color: var(--inline-code-bg);
-    color: var(--inline-code-color, var(--code-color));
+    color: var(--inline-code-color, var(--bs-code-color));
     box-shadow: 0 0 0 1px var(--inline-code-border-color, transparent),
       var(--inline-code-shadow, none);
     border: 0;
