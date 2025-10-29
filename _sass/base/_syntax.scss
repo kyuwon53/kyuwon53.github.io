@@ -68,14 +68,15 @@ code {
 
   &.highlighter-rouge {
     font-size: v.$code-font-size;
-    padding: 0.25rem 0.45rem;
+    padding: 0.3rem 0.55rem;
     word-break: break-word;
     border-radius: v.$radius-sm;
     background-color: var(--inline-code-bg);
     color: var(--inline-code-color, var(--code-color));
-    box-shadow: 0 0 0 1px var(--inline-code-border-color, transparent);
+    box-shadow: 0 0 0 1px var(--inline-code-border-color, transparent),
+      var(--inline-code-shadow, none);
     border: 0;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   &.filepath {
