@@ -4,8 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fkyuwon53.github.io%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23FFFFFF&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-
 <p style="font-weight:bolder; font-size:2.325em;"> 🌱 자라는 개발자  💡 다정한 개발자되기 </p>
  
 > 연구에 따르면 8주의 간격을 두고 26회 반복한 경우 가장 많은 기억을 했다. 요약하자면, 오랫동안 학습한 만큼 더 오래 기억한다. 더 많은 시간을 학습해야 한다는 것이 아니라 더 오랜 간격을 두고 학습해야 한다는 것이다.
@@ -96,6 +94,7 @@ order: 4
 <div class="resume-actions">
   <a class="resume-btn resume-btn--primary" href="/assets/resume.html?print=1" target="_blank" rel="noopener">📄 PDF 다운로드</a>
   <a class="resume-btn" href="/assets/resume.html" target="_blank" rel="noopener">🔗 따로보기</a>
+  <a class="resume-btn" href="/assets/resume-en.html" target="_blank" rel="noopener">🌐 영문 이력서</a>
 </div>
 
 <style>
