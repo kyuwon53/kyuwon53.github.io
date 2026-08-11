@@ -93,7 +93,9 @@ order: 4
 
 <div class="resume-actions">
   <a class="resume-btn resume-btn--primary" href="/assets/resume.html?print=1" target="_blank" rel="noopener">📄 PDF 다운로드</a>
-  <a class="resume-btn" href="/assets/resume.html" target="_blank" rel="noopener">🔗 따로보기</a>
+  <a class="resume-btn" href="/assets/resume.html" target="_blank" rel="noopener">🔗 국문 이력서 (이력서+경력기술서)</a>
+  <a class="resume-btn" href="/assets/resume-ko.html" target="_blank" rel="noopener">🔗 국문이력서</a>
+  <a class="resume-btn" href="/assets/career-description-ko.html" target="_blank" rel="noopener">🔗 경력기술서</a>
   <a class="resume-btn" href="/assets/resume-en.html" target="_blank" rel="noopener">🌐 영문 이력서</a>
 </div>
 

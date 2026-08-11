@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>이규원 — BE software engineer</title>
+    <style>
+  :root { --ink:#222; --muted:#666; --accent:#1f3a5f; --line:#cfcfcf; }
+  * { box-sizing: border-box; }
+  html, body { background: #fff; }
+  body { font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", Arial, sans-serif; color: var(--ink); line-height: 1.56; max-width: 820px; margin: 28px auto; padding: 0 26px; font-size: 10.3pt; }
+  h1 { font-size: 22pt; margin: 0 0 4px; }
+  .role-title { font-size: 11pt; color: var(--ink); margin: 0 0 2px; }
+  .period { font-size: 9.4pt; color: var(--muted); margin: 0 0 2px; }
+  .entry-row { display: flex; align-items: flex-start; gap: 10px; margin: 0 0 10px; }
+  .entry-period { flex: 0 0 110px; font-size: 9.4pt; color: var(--muted); line-height: 1.45; padding-top: 2px; }
+  .entry-content { flex: 1; min-width: 0; }
+  .education-item .entry-row { align-items: center; }
+  .education-item .entry-period { padding-top: 0; }
+  .entry-content .role-title,
+  .entry-content .tech-line,
+  .entry-content p { margin-left: 0; }
+  .contact { font-size: 9.5pt; color: var(--muted); margin: 0 0 4px; }
+  h2 { font-size: 12pt; color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: 4px; margin: 22px 0 10px; }
+  .section-title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); padding-bottom: 4px; margin: 22px 0 10px; }
+  .section-title-row h2 { border-bottom: 0; padding-bottom: 0; margin: 0; }
+  .last-update { font-size: 9.2pt; color: var(--muted); white-space: nowrap; }
+  h3 { font-size: 11.5pt; margin: 18px 0 2px; }
+  h4 { font-size: 10.9pt; color: #111; margin: 12px 0 4px; }
+  .domain { font-size: 9.8pt; color: var(--muted); margin: 0 0 6px; }
+  .lead-statement { font-size: 10.4pt; color: #111; font-weight: 700; margin: 0 0 8px; line-height: 1.5; }
+  .tech-line { font-size: 9.2pt; color: var(--muted); margin: 0 0 8px; }
+  .company-header { display: flex; align-items: baseline; gap: 8px; margin: 8px 0 6px; }
+  .company-period { font-size: 9.4pt; color: var(--muted); font-weight: 400; }
+  .current-company { font-size: 9.4pt; color: var(--accent); font-weight: 700; }
+  .education-label { font-size: 10.1pt; color: #111; font-weight: 500; }
+  .skills-section { margin: 8px 0 10px; }
+  .skills-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
+  .skill-card { padding: 2px 0; break-inside: avoid; }
+  .skill-card h3 { font-size: 10.4pt; margin: 0 0 5px; color: var(--accent); }
+  .skill-card p { margin: 0; font-size: 9.5pt; color: var(--muted); line-height: 1.5; }
+  .status-note { color: var(--muted); font-weight: 400; }
+  .experience-block { margin: 0 0 18px; padding: 0 0 10px; border-bottom: 1px solid var(--line); }
+  .experience-block:last-of-type { border-bottom: 0; padding-bottom: 0; margin-bottom: 10px; }
+  .experience-company { font-size: 12pt; font-weight: 700; margin: 8px 0 6px; }
+  .experience-role { margin: 0 0 12px; padding-left: 12px; border-left: 2px solid #e5e5e5; }
+  .experience-role:last-child { margin-bottom: 0; }
+  .experience-role .role-title { font-size: 10.9pt; margin: 0 0 1px; }
+  .experience-role .domain { margin: 0 0 4px; }
+  .experience-role .tech-line { margin: 0 0 6px; }
+  .experience-tech { margin: 0 0 8px; padding-left: 10px; }
+  .project-item { margin: 0 0 10px; }
+  .project-item h4 { margin: 0 0 3px; }
+  .project-item .tech-line { margin: 0 0 6px; }
+  .project-phase { font-size: 9.2pt; font-weight: 700; color: var(--accent); margin: 8px 0 2px; }
+  .project-body { margin: 0 0 6px; }
+  ul { margin: 4px 0 10px; padding-left: 19px; }
+  li { margin: 0 0 5px; }
+  p { margin: 6px 0; }
+  code { font-family: "SFMono-Regular", Consolas, monospace; font-size: 9.3pt; background: #f4f4f4; padding: 0 3px; border-radius: 3px; }
+  h2, h3, h4 { break-after: avoid; page-break-after: avoid; }
+  li, ul { break-inside: avoid; }
+  @page { margin: 16mm; }
+</style>
+  </head>
+  <body>
+
+    <h1>이규원</h1>
+    <p class="role-title">BE software engineer</p>
+    <p class="contact">Seoul, Korea · 010-8502-8223 · kyuwoon369@gmail.com</p>
+    <p class="contact">github.com/kyuwon53 · linkedin.com/in/eekyuwon</p>
+
+    <div class="section-title-row">
+      <h2>INTRODUCE</h2>
+      <div class="last-update">last updated · 2026.08</div>
+    </div>
+    <p>Kotlin, Java, Spring Boot 등을 주력으로 사용하며, 세무, 제조 AI, 커머스 다양한 도메인에서 시스템 신규
+      전환·확장, 데이터 마이그레이션, 데이터 싱크, 운영 효율화, 트래픽 대응을 수행했습니다.
+      새로운 요구사항을 빠르게 이해하고 문제의 본질을 파악하여, 안정성과 확장성 중심의 백엔드 시스템을 구축하는 데 강점을 가지고
+      있습니다.
+    </p>
+    <p>
+      모호한 요구사항을 기술적으로 구현하는 데 그치지 않고, 해결해야 할 문제를 명확하게 정의한 뒤 도메인과 사용자 관점에서 더 나은
+      구조로 재설계하는 것을 중요하게 생각합니다.
+    </p>
+    <p>
+      단기적인 기능 요구사항보다 도메인 간 책임과 의존성, 데이터 정합성, 운영 안정성, 향후 확장성을 함께 고려해왔습니다.
+      특히 기존 구조가 새로운 비즈니스 요구를 수용하기 어려운 경우에는 문제를 기존 방식에 맞추기보다 책임과 경계를 다시 정의하여 확장
+      가능한 구조로 전환하는 데 강점을 갖고 있습니다.
+      서비스의 품질은 기술적 완성도뿐 아니라 도메인에 대한 이해와 사용자의 맥락을 얼마나 정확하게 해석하는지에 의해 결정된다고 생각합니다.
+      개발과 기획의 경계를 구분하기보다 비즈니스 목표를 이해하고, 기술적으로 지속 가능한 해결책을 설계하는 백엔드 엔지니어를 지향합니다.
+    </p>
+
+    <h2>EXPERIENCE</h2>
+    <div class="experience-block">
+      <div class="company-header">
+        <div class="experience-company">한빛앤</div>
+        <div class="current-company">재직 중</div>
+      </div>
+      <p class="domain">30년 이상의 업력을 지닌 한빛출판네트워크의 노하우를 바탕으로, AI 시대에 맞춘 IT·AI 교육과
+        디지털 콘텐츠 서비스를 제공하는 회사</p>
+      <div class="entry-row">
+        <p class="entry-period">2026.03 ~ 재직 중</p>
+        <div class="entry-content">
+          <p class="role-title">공통 서비스 개발팀</p>
+          <p class="period">Backend Engineer & Team Lead</p>
+          <div class="experience-role">
+            <p class="lead-statement">서비스 간 책임 경계와 향후 확장성을 고려해 기술적 방향성을 제시하고
+              아키텍처 의사결정을 주도합니다.</p>
+            <ul>
+              <li>본인인증 이관과 함께 인증 결과의 일회성 사용, 사용자 식별정보 보호, 계정 복구 흐름을 재설계하여 공통 인증 체계를 고도화했습니다.</li>
+              <li>역할·회원 그룹·리소스 기반 접근제어를 구축하고 단건 검증과 목록 필터링을 분리하여 권한 로직의 중복 및 비즈니스 결합도를 축소했습니다.</li>
+              <li>팀 리드로서 구성원의 업무 우선순위와 역할을 조율하고, 정기적인 피드백과 코드 리뷰를 통해 구성원의 성장을 지원하며 팀이 안정적으로 성과를 낼 수 있는 협업 환경을 구축하였습니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry-row">
+        <p class="entry-period">2024.09 ~ 2026.02</p>
+        <div class="entry-content">
+          <p class="role-title">서비스 개발팀</p>
+          <p class="period">Backend Engineer</p>
+          <div class="experience-role">
+            <ul>
+              <li>운영 중인 레거시와 신규 플랫폼의 공존 기간에 Spring Batch 기반 Migration 구조를 구축하고, 신규·변경 데이터 판별과 식별자 매핑을 통해 상품·강사·연관 콘텐츠를 단계적으로 전환 및 동기화했습니다.</li>
+              <li>주문에 종속되어 있던 콘텐츠 이용 권한을 독립적인 상태 모델로 분리하고 소장·대여·회수·재활성화 정책을 공통화하여 기업 일괄 지급, 패키지, 이벤트 보상 등 비구매 기반 콘텐츠 제공 방식으로 확장했습니다.</li>
+            </ul>
+          </div>
+          <div class="experience-role">
+            <ul>
+              <li>장바구니 → 주문 → 결제 → 쿠폰·적립금 → 콘텐츠 지급·복구로 이어지는 상태 전이와 후처리 책임을 재정의하고, 주문 상태를 13종에서 8종으로 통합하여 상태 복잡도를 약 38% 축소했습니다.</li>
+              <li>결제 API·Webhook·주문 보정 경로의 역할을 분리하고 결제 실패·취소 시 쿠폰·적립금·콘텐츠·장바구니의 복구 기준을 일원화하여 2026.01 신규 주문·결제 시스템 운영 전환 및 안정화를 이끌었습니다.</li>
+              <li>전자책 원문에 AES-256 기반 청크 암호화를 적용하고 KMS 기반 키 보호 구조를 구성하여 콘텐츠 원문과 암호화 키의 보안 책임을 분리했습니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="tech-line experience-tech">Tech: Java, Kotlin, Spring Boot, Spring Batch, JPA, PostgreSQL, MySQL, AWS, Docker, Typescript, React</p>
+    </div>
+
+    <div class="experience-block">
+      <div class="company-header">
+        <div class="experience-company">MakinaRocks</div>
+        <div class="company-period">1년 11개월</div>
+      </div>
+      <p class="domain">공장에서 전장에 이르기까지 가장 거칠고 예측 불가능한 환경에서 동작하는 피지컬 AI를 만드는 산업
+        특화 AI 기업.</p>
+
+      <div class="entry-row">
+        <p class="entry-period">2023.09 ~ 2024.08</p>
+        <div class="entry-content">
+          <p class="role-title">ML Solution Ray팀</p>
+          <p class="period">Backend Engineer</p>
+          <div class="experience-role">
+            <ul>
+              <li>AI 엔지니어와 협업해 이상탐지 대시보드를 프로토타입 단계부터 상용 배포까지 개발했습니다.</li>
+              <li>실시간 진동 데이터를 모니터링하고 라벨링할 수 있는 기능을 구현해 장비 상태 분석과 운영에 활용할 수 있는
+                기반을 마련했습니다.</li>
+              <li>클라우드 기반 대시보드와 전용 진동 센서를 연계해 별도 구축 없이 장비 데이터를 수집·관리할 수 있는 구조를
+                정리했습니다.</li>
+              <li>실제 고객 환경에 적용해 상용 프로젝트를 수주하고, CO2 레이저 드릴에서 고장 1개월 전 이상 징후를 예측하는
+                성과로 실사용까지 연결했습니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="entry-row">
+        <p class="entry-period">2022.10 ~ 2023.09</p>
+        <div class="entry-content">
+          <p class="role-title">MLService팀</p>
+          <p class="period">Backend Engineer</p>
+          <div class="experience-role">
+            <ul>
+              <li>고객사로부터 전달받은 원천 데이터(MDF 포맷)를 자동 감지·파싱·시간 보정·적재하는 DB 구축 프로세스를
+                설계했습니다.</li>
+              <li>Python 기반 적재 자동화를 구현하고 PostgreSQL과 K8s 환경에 배포해 수작업 적재를
+                제거했습니다.</li>
+              <li>데이터 적재 과정을 자동화해 모델링 데이터 정합성을 확보하고 ML 실험 생산성과 효율성을 높였습니다.</li>
+              <li>원천 데이터와 이상치 추론 값의 수집 이상을 자동 판별하고 Slack 알림을 보내는 모니터링 스크립트를
+                개발했습니다.</li>
+              <li>이상치 임계값과 통계 테이블 기반 적재 구조를 개선해 조회 속도를 5초에서 1초 미만으로 단축하고 DB 부하를
+                줄였습니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="tech-line experience-tech">Tech: Java, Spring Boot, JPA, Python, Django, PostgreSQL, Kafka, RabbitMQ, Kubernetes, Docker, AWS</p>
+    </div>
+
+    <div class="experience-block">
+      <div class="company-header">
+        <div class="experience-company">유플러스아이티(Uplus IT)</div>
+        <div class="company-period">1년 1개월</div>
+      </div>
+      <p class="domain">전국민 10명 중 9명이 사용하는 홈택스·손택스 세금 신고 서비스</p>
+
+      <div class="entry-row">
+        <p class="entry-period">2021.09 ~ 2022.10</p>
+        <div class="entry-content">
+          <p class="role-title">홈택스·손택스 종합소득세팀</p>
+          <p class="period">Full-Stack Software Engineer</p>
+          <div class="experience-role">
+            <ul>
+              <li>고트래픽 환경에서 종합소득세 신고 서비스를 안정적으로 오픈하고 운영했습니다.</li>
+              <li>최종 신고 인원 949만 5,000명, 전년 대비 18.4% 증가한 구간을 장애 없이 처리했습니다.</li>
+              <li>세법 개정 일정에 맞춰 신고 화면과 계산 로직을 함께 조정하고 재사용 가능한 계산 구조를 정리했습니다.</li>
+              <li>세금계산서 대량 배치 처리 최적화를 통해 700만 건 적재를 안정적으로 수행했습니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="tech-line experience-tech">Tech: Java, JSP, JavaScript, DB2</p>
+    </div>
+
+    <div class="skills-section">
+        <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages &amp; Frameworks</h3>
+          <p>Kotlin, Java, Spring Boot, Spring Batch, JPA, Python, Django, JavaScript, Typescript, React</p>
+        </div>
+        <div class="skill-card">
+          <h3>Databases &amp; Messaging</h3>
+          <p>PostgreSQL, MySQL, Kafka, RabbitMQ, DB2</p>
+        </div>
+        <div class="skill-card">
+          <h3>Infrastructure &amp; DevOps</h3>
+          <p>AWS, Docker, Kubernetes, GitHub Actions, Jenkins, Grafana</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>자격증 / 수상</h2>
+    <ul>
+      <li>2021.06 · 한국데이터산업진흥원 · SQLD (SQL 개발자)</li>
+      <li>전사 우수사원 포상 (한빛앤) · 2026년 조직 개편에서 공통 서비스 개발팀 팀장 승진</li>
+    </ul>
+
+    <h2>EDUCATION</h2>
+    <div class="project-item education-item">
+      <div class="entry-row">
+        <p class="entry-period">2021.02 ~ 2021.08</p>
+        <div class="entry-content">
+          <p class="education-label">넥스트아이티 · 머신러닝 활용 JAVA 웹 응용 SW 엔지니어 과정</p>
+        </div>
+      </div>
+    </div>
+    <div class="project-item education-item">
+      <div class="entry-row">
+        <p class="entry-period">2017.03 ~ 2019.02</p>
+        <div class="entry-content">
+          <p class="education-label">충남대학교 · 수학과 <span class="status-note">(편입·졸업)</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="project-item education-item">
+      <div class="entry-row">
+        <p class="entry-period">2015.03 ~ 2017.02</p>
+        <div class="entry-content">
+          <p class="education-label">공주대학교 · 응용수학과 <span class="status-note">(중퇴)</span></p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
