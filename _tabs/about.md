@@ -99,11 +99,34 @@ order: 4
   <a class="resume-btn" href="/assets/resume-en.html" target="_blank" rel="noopener">🌐 영문 이력서</a>
 </div>
 
+<div class="resume-preview">
+  <div class="resume-preview__header">
+    <span>이력서 미리보기</span>
+    <a href="/assets/resume.html" target="_blank" rel="noopener">새 창으로 열기</a>
+  </div>
+  <iframe
+    class="resume-preview__frame"
+    src="/assets/resume.html"
+    title="이력서 미리보기"
+    loading="lazy"
+  ></iframe>
+</div>
+
 <style>
-.resume-actions { display: flex; gap: 8px; margin: 12px 0 16px; }
+.resume-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
 .resume-actions .resume-btn { display: inline-block; padding: 7px 16px; font-size: 0.875rem; font-weight: 600; border: 1px solid #cfcfcf; border-radius: 6px; text-decoration: none; color: #1f3a5f; background: #fff; }
 .resume-actions .resume-btn--primary { background: #1f3a5f; border-color: #1f3a5f; color: #fff; }
 .resume-actions .resume-btn:hover { opacity: 0.85; text-decoration: none; }
+
+.resume-preview { margin: 16px 0 24px; padding: 14px; border: 1px solid #cfcfcf; border-radius: 10px; background: #fff; }
+.resume-preview__header { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; font-size: 0.92rem; font-weight: 700; color: #1f3a5f; }
+.resume-preview__header a { font-size: 0.85rem; font-weight: 600; color: #1f3a5f; text-decoration: none; }
+.resume-preview__header a:hover { text-decoration: underline; }
+.resume-preview__frame { width: 100%; height: 1100px; border: 1px solid #e2e2e2; border-radius: 8px; background: #fff; }
+
+@media (max-width: 768px) {
+  .resume-preview__frame { height: 80vh; min-height: 720px; }
+}
 
 .resume-doc { --ink: #222; --muted: #666; --accent: #1f3a5f; --line: #cfcfcf;
   background: #fff; color: var(--ink); line-height: 1.68; font-size: 10.5pt;
