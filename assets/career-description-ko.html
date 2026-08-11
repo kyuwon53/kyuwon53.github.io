@@ -8,8 +8,10 @@
   * { box-sizing: border-box; }
   html, body { background: #fff; }
   body { font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", Arial, sans-serif; color: var(--ink); line-height: 1.56; max-width: 820px; margin: 28px auto; padding: 0 26px; font-size: 10.3pt; }
+  .header-row { display: flex; align-items: baseline; gap: 10px; margin: 0 0 4px; }
   h1 { font-size: 22pt; margin: 0 0 4px; }
-  .role-title { font-size: 11pt; color: var(--ink); margin: 0 0 2px; }
+  .name-role { font-size: 11pt; color: var(--muted); font-weight: 700; margin: 0; }
+  .doc-label { font-size: 9.5pt; color: var(--muted); margin: 0 0 4px; }
   .period { font-size: 9.4pt; color: var(--muted); margin: 0 0 2px; }
   .entry-row { display: flex; align-items: flex-start; gap: 10px; margin: 0 0 10px; }
   .entry-period { flex: 0 0 110px; font-size: 9.4pt; color: var(--muted); line-height: 1.45; padding-top: 2px; }
@@ -19,11 +21,13 @@
   .entry-content p { margin-left: 0; }
   .contact { font-size: 9.5pt; color: var(--muted); margin: 0 0 4px; }
   h2 { font-size: 12pt; color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: 4px; margin: 22px 0 10px; }
-  h3 { font-size: 11.5pt; margin: 18px 0 2px; }
-  h4 { font-size: 10.9pt; color: #111; margin: 12px 0 4px; }
+  h3 { font-size: 12.3pt; margin: 18px 0 6px; font-weight: 700; color: var(--accent); letter-spacing: -0.1px; }
+  h4 { font-size: 10.6pt; color: #111; margin: 10px 0 4px; font-weight: 700; }
   .tech-line { font-size: 9.2pt; color: var(--muted); margin: 0 0 8px; }
   .project-item { margin: 0 0 10px; }
-  .project-item h4 { margin: 0 0 3px; }
+  .project-item .entry-row { align-items: center; }
+  .project-item .entry-period { padding-top: 0; }
+  .project-item h4 { margin: 0 0 4px; }
   .project-item .tech-line { margin: 0 0 6px; }
   .project-phase { font-size: 9.2pt; font-weight: 700; color: var(--accent); margin: 8px 0 2px; }
   .project-body { margin: 0 0 6px; }
@@ -36,10 +40,31 @@
     </style>
   </head>
   <body>
-    <h1>이규원</h1>
-    <p class="role-title">경력기술서</p>
+    <div class="header-row">
+      <h1>이규원</h1>
+      <p class="name-role">Backend Engineer</p>
+    </div>
+    <p class="doc-label">경력기술서</p>
     <p class="contact">Seoul, Korea · 010-8502-8223 · kyuwoon369@gmail.com</p>
     <p class="contact">github.com/kyuwon53 · linkedin.com/in/eekyuwon</p>
+
+    <h2>SKILLS</h2>
+    <div class="skills-section">
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages &amp; Frameworks</h3>
+          <p>Kotlin, Java, Spring Boot, Spring Batch, JPA, Python, Django, JavaScript, Typescript, React</p>
+        </div>
+        <div class="skill-card">
+          <h3>Databases &amp; Messaging</h3>
+          <p>PostgreSQL, MySQL, Kafka, RabbitMQ, DB2</p>
+        </div>
+        <div class="skill-card">
+          <h3>Infrastructure &amp; DevOps</h3>
+          <p>AWS, Docker, Kubernetes, GitHub Actions, Jenkins, Grafana</p>
+        </div>
+      </div>
+    </div>
 
     <h2>Projects</h2>
 
@@ -220,11 +245,15 @@
       <div class="entry-row">
         <p class="entry-period">2021.09 ~ 2022.10</p>
         <div class="entry-content">
-          <p class="period">Software Engineer</p>
+          <p class="period">Full Stack Software Engineer</p>
 </div>
       </div>
-      <p>국민 10명 중 9명이 이용하는 종합소득세 신고 서비스를 안정적으로 오픈·운영했고, 최종 신고 인원 949만 5,000명 규모를 장애 없이 처리했습니다. 신고서 화면과 계산 로직을 함께 담당하며 세법 변경에 맞춰 검증 규칙을 안정화했습니다.</p>
-    
+      <p class="project-phase">문제</p>
+      <p class="project-body">홈택스에서 가장 트래픽이 높고 사용자 수가 많은 종합소득세 신고 서비스는 매년 데이터 이슈와 오픈 대응 부담이 큰 서비스였습니다.</p>
+      <p class="project-phase">해결</p>
+      <p class="project-body">작년과 변경되는 부분을 미리 체크하고 동료들과 공유하여 불필요한 작업을 줄였으며, 개발 가능한 시간을 확보해 테스트와 검증을 충분히 진행할 수 있도록 했습니다. 모르는 부분은 적극적으로 공유하며 팀 내 소통을 강화해 버그 원인을 빠르게 파악하고 수정할 수 있는 협업 흐름을 만들었습니다.</p>
+      <p class="project-phase">결과</p>
+      <p class="project-body">종합소득세 신고 서비스를 안정적으로 오픈·운영했고, 최종 신고 인원 949만 5,000명 규모를 장애 없이 처리했습니다. 신고 기간 동안의 버그 분석과 대응 속도를 높여 안정적인 운영에 기여했습니다.</p>
       <p class="tech-line experience-tech">Tech: Java, JavaScript, DB2, JSP</p>
     </div>
     <hr class="project-sep">
@@ -234,25 +263,33 @@
       <div class="entry-row">
         <p class="entry-period">2021.09 ~ 2022.10</p>
         <div class="entry-content">
-          <p class="period">Software Engineer</p>
+          <p class="period">Full Stack Software Engineer</p>
 </div>
       </div>
-      <p>세법 개정에 맞춰 계산 구조와 화면 로직을 재정비했고, 7,000줄이 넘는 계산 로직을 공통 계산기 모듈로 분리해 재사용성과 유지보수성을 높였습니다.</p>
-    
+      <p class="project-phase">문제</p>
+      <p class="project-body">연말정산을 한 근로자가 세금 감면을 덜 받았을 때 경정청구를 통해 세금을 감면받을 수 있어, 21귀속 세법 개정에 맞는 계산기 팝업과 계산 알고리즘을 새로 개발해야 했습니다. 기존 코드는 정리가 되어 있지 않아 분석이 어렵고 재사용과 변경이 힘든 상태였습니다.</p>
+      <p class="project-phase">해결</p>
+      <p class="project-body">재사용 가능하고 변경하기 쉬운 코드 구조로 바꾸자는 의견을 제안하고, 7,000줄이 넘던 계산 알고리즘 스크립트를 리팩토링해 약 2,000줄 수준으로 정리했습니다. 또한 다른 팀의 데이터와 서비스를 사용해야 하는 구조를 빠르게 파악하기 위해 먼저 적극적으로 연락해 데이터 흐름을 이해하고, 필요한 계산 로직과 화면 동작을 맞춰 구현했습니다.</p>
+      <p class="project-phase">결과</p>
+      <p class="project-body">계산 구조와 화면 로직을 세법 개정에 맞게 재정비하고, 코드 분석과 추가 변경에 드는 시간을 줄였습니다. 원천 데이터 흐름을 빠르게 파악해 이전 귀속보다 2주 빨리 구현을 마쳤고, 계산기 팝업과 알고리즘을 안정적으로 제공할 수 있었습니다.</p>
       <p class="tech-line experience-tech">Tech: Java, JavaScript, DB2, JSP</p>
     </div>
     <hr class="project-sep">
 
     <div class="project-item">
-      <h4>세금계산서 대량 배치 처리 최적화</h4>
+      <h4>기준경비율 주요경비 세금계산서 데이터 적재 배치 개발</h4>
       <div class="entry-row">
         <p class="entry-period">2021.09 ~ 2022.10</p>
         <div class="entry-content">
-          <p class="period">Software Engineer</p>
+          <p class="period">Full Stack Software Engineer</p>
 </div>
       </div>
-      <p>대량 세금계산서 적재에 대응하기 위해 배치 처리 구조를 설계하고 700만 건 적재를 안정적으로 수행했으며, 작은 실행 단위로 분할 처리하도록 재구성해 DB 부하를 낮추고 대량 적재를 안정화했습니다.</p>
-    
+      <p class="project-phase">문제</p>
+      <p class="project-body">기준경비율 주요경비 세금계산서 데이터 70만 건 적재와 대량 세금계산서 700만 건 적재 모두 기존 데이터 load 방식으로는 데이터 양 증가와 DB 부하 문제를 감당하기 어려운 구조였습니다.</p>
+      <p class="project-phase">해결</p>
+      <p class="project-body">데이터 양에 따라 작업일자를 나누어 배치 처리할 수 있도록 프로그램을 수정하고, 적재 방식을 load에서 insert 기반 병렬 처리로 전환했습니다. 첫 배치 개발 업무였지만 업무 흐름을 이해하기 위해 계속 질문하고 공식 문서와 기존 레퍼런스 자료를 참고해 구현을 완료했습니다.</p>
+      <p class="project-phase">결과</p>
+      <p class="project-body">70만 건 적재 배치와 700만 건 대량 적재 모두 DB 부하를 낮춘 구조로 처리할 수 있게 되었고, 분할 적재와 병렬 처리 기반의 배치 구조를 안정적으로 운영할 수 있었습니다.</p>
       <p class="tech-line experience-tech">Tech: Java, JavaScript, DB2, JSP</p>
     </div>
     <hr class="project-sep">
