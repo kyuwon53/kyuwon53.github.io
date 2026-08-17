@@ -97,3 +97,28 @@ order: 4
   <a class="resume-btn" href="/assets/career-description-ko.html" target="_blank" rel="noopener">🔗 경력기술서</a>
   <a class="resume-btn" href="/assets/resume-en.html" target="_blank" rel="noopener">🌐 영문 이력서</a>
 </div>
+<div class="resume-preview">
+  <iframe
+    src="/assets/resume-ko.html"
+    title="국문 이력서"
+    loading="lazy">
+  </iframe>
+</div>
+
+<style>
+.resume-preview {
+  width: 100%;
+  margin-top: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.resume-preview iframe {
+  display: block;
+  width: 100%;
+  height: 1200px;
+  border: 0;
+}
+</style>
