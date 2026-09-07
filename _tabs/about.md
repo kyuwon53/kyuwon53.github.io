@@ -105,6 +105,17 @@ order: 4
   </iframe>
 </div>
 
+### AI-assisted Engineering
+
+<ul class="ai-assisted-engineering">
+  <li>생성형 AI를 코드 생성뿐 아니라 <strong>도메인 설계, 아키텍처 검토, 기술 의사결정 검증을 위한 페어 엔지니어링 도구</strong>로 활용</li>
+  <li>주문·결제·세미나 등 복합적인 비즈니스 정책을 <strong>서비스 정책 → 도메인 모델 → API → UI 흐름</strong>으로 구조화하고 설계 대안 비교</li>
+  <li>동시성, 트랜잭션, JPA, 데이터베이스 등 기술 이슈에 대해 가설을 수립하고 AI와 공식 문서를 활용하여 근거 검증</li>
+  <li>SQL 및 서비스 데이터를 활용해 퍼널·주문·전환 데이터를 분석하고, 단순 집계를 넘어 지표 정의와 해석까지 수행</li>
+  <li>개발 내용을 기획·운영 등 비개발 직군이 이해할 수 있도록 정리하여 부서 간 커뮤니케이션 비용 절감</li>
+  <li>AI의 결과를 그대로 적용하지 않고, 반례·예외 상황·유지보수성을 추가 검토하여 최종 의사결정은 직접 수행</li>
+</ul>
+
 <style>
 .resume-preview {
   width: 100%;
@@ -120,5 +131,15 @@ order: 4
   width: 100%;
   height: 1200px;
   border: 0;
+}
+
+.ai-assisted-engineering {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  line-height: 1.75;
+}
+
+.ai-assisted-engineering li {
+  margin-bottom: 8px;
 }
 </style>
