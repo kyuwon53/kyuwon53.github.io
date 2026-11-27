@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Backend Engineer — 왜 해야 하는지 묻고, 기술 너머의 문제를 봅니다."
+    />
+    <title>
+      Backend Engineer — 왜 해야 하는지 묻고, 기술 너머의 문제를 봅니다
+    </title>
+    <style>
+      :root {
+        --paper: #f3f1eb;
+        --ink: #171916;
+        --muted: #666b62;
+        --line: #d7d8cf;
+        --acid: #d6f36a;
+        --blue: #3657d6;
+        --white: #fffefa;
+        --dark: #20231f;
+        --serif: Georgia, "Times New Roman", serif;
+        --sans: Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--sans);
+        line-height: 1.65;
+        word-break: keep-all;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .wrap {
+        width: min(1160px, calc(100% - 64px));
+        margin: auto;
+      }
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .topbar .mark {
+        font-weight: 800;
+        letter-spacing: 0.02em;
+      }
+      .topbar nav {
+        display: flex;
+        gap: 22px;
+        color: var(--muted);
+      }
+      .hero {
+        padding: 100px 0 78px;
+        display: grid;
+        grid-template-columns: 1fr 260px;
+        gap: 50px;
+        align-items: end;
+      }
+      .kicker,
+      .eyebrow {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--blue);
+      }
+      h1 {
+        font-size: clamp(52px, 8vw, 104px);
+        line-height: 1.02;
+        letter-spacing: -0.075em;
+        margin: 24px 0 26px;
+        font-weight: 850;
+      }
+      h1 em {
+        font-family: var(--serif);
+        font-weight: 400;
+        letter-spacing: -0.07em;
+      }
+      .hero-copy {
+        font-size: 18px;
+        max-width: 680px;
+        color: #41463e;
+        line-height: 1.8;
+      }
+      .hero-aside {
+        border-left: 1px solid var(--line);
+        padding-left: 24px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .hero-aside strong {
+        display: block;
+        color: var(--ink);
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+      .hero-aside div + div {
+        margin-top: 22px;
+      }
+      .stamp {
+        display: inline-block;
+        background: var(--acid);
+        padding: 6px 10px;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        margin-bottom: 8px;
+      }
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid var(--ink);
+        border-bottom: 1px solid var(--ink);
+        margin: 0 0 100px;
+      }
+      .metric {
+        padding: 22px 18px 24px 0;
+      }
+      .metric + .metric {
+        border-left: 1px solid var(--line);
+        padding-left: 22px;
+      }
+      .metric b {
+        font-size: clamp(27px, 3.5vw, 42px);
+        letter-spacing: -0.06em;
+        display: block;
+        line-height: 1.1;
+      }
+      .metric span {
+        font-size: 12px;
+        color: var(--muted);
+        display: block;
+        margin-top: 9px;
+      }
+      section {
+        padding: 0 0 100px;
+      }
+      .section-head {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 40px;
+        margin-bottom: 34px;
+      }
+      .section-no {
+        font-size: 11px;
+        color: var(--blue);
+        font-weight: 800;
+        letter-spacing: 0.15em;
+      }
+      h2 {
+        font-size: clamp(30px, 4vw, 48px);
+        letter-spacing: -0.06em;
+        line-height: 1.15;
+        margin: 0;
+      }
+      .lead {
+        font-size: 17px;
+        color: #555b52;
+        max-width: 720px;
+        margin: 15px 0 0;
+      }
+      .principles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      .principle {
+        background: var(--white);
+        padding: 27px;
+        min-height: 220px;
+        border: 1px solid #e7e5dc;
+      }
+      .principle .num {
+        font-family: var(--serif);
+        font-size: 34px;
+        color: var(--blue);
+      }
+      .principle h3 {
+        font-size: 20px;
+        letter-spacing: -0.04em;
+        margin: 15px 0 8px;
+      }
+      .principle p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .feature {
+        background: var(--dark);
+        color: var(--white);
+        padding: 44px;
+        margin-bottom: 14px;
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 50px;
+      }
+      .feature .eyebrow {
+        color: var(--acid);
+      }
+      .feature h3 {
+        font-size: 34px;
+        line-height: 1.2;
+        letter-spacing: -0.06em;
+        margin: 15px 0;
+      }
+      .feature .summary {
+        color: #c6c9c0;
+        font-size: 14px;
+        max-width: 420px;
+      }
+      .feature ul {
+        padding-left: 18px;
+        margin: 0;
+        color: #e1e3dc;
+        font-size: 14px;
+      }
+      .feature li {
+        margin: 0 0 10px;
+      }
+      .feature .outcome {
+        margin-top: 22px;
+        padding-top: 18px;
+        border-top: 1px solid #4a4e46;
+        color: var(--acid);
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .project {
+        background: var(--white);
+        padding: 30px;
+        border: 1px solid #e7e5dc;
+      }
+      .project .tag {
+        font-size: 10px;
+        letter-spacing: 0.12em;
+        color: var(--blue);
+        font-weight: 800;
+      }
+      .project h3 {
+        font-size: 23px;
+        letter-spacing: -0.05em;
+        margin: 10px 0;
+      }
+      .project p {
+        font-size: 14px;
+        color: var(--muted);
+        margin: 0 0 16px;
+      }
+      .project ul {
+        margin: 0;
+        padding-left: 18px;
+        font-size: 13px;
+        color: #41463e;
+      }
+      .project li {
+        margin: 6px 0;
+      }
+      .timeline {
+        border-top: 1px solid var(--ink);
+      }
+      .job {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 40px;
+        padding: 30px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .job-date {
+        font-size: 12px;
+        color: var(--muted);
+        padding-top: 5px;
+      }
+      .job-date strong {
+        display: block;
+        color: var(--ink);
+        font-size: 14px;
+      }
+      .job h3 {
+        font-size: 25px;
+        letter-spacing: -0.05em;
+        margin: 0;
+      }
+      .job .role {
+        font-size: 13px;
+        color: var(--blue);
+        font-weight: 700;
+        margin: 3px 0 14px;
+      }
+      .job p {
+        font-size: 14px;
+        color: #555b52;
+        margin: 0;
+        max-width: 760px;
+      }
+      .job .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-top: 14px;
+      }
+      .chip {
+        font-size: 11px;
+        border: 1px solid var(--line);
+        padding: 4px 9px;
+        color: #565b52;
+      }
+      .stack {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 40px;
+        border-top: 1px solid var(--ink);
+        padding: 25px 0;
+      }
+      .stack h3 {
+        font-size: 14px;
+        margin: 0;
+      }
+      .stack p {
+        font-size: 14px;
+        color: var(--muted);
+        margin: 0;
+      }
+      .closing {
+        background: var(--acid);
+        padding: 55px;
+        margin-bottom: 70px;
+        display: grid;
+        grid-template-columns: 1fr 280px;
+        gap: 35px;
+        align-items: end;
+      }
+      .closing h2 {
+        font-size: clamp(34px, 5vw, 58px);
+        max-width: 680px;
+      }
+      .closing p {
+        font-size: 14px;
+        color: #3f4826;
+        max-width: 660px;
+      }
+      .closing aside {
+        font-size: 13px;
+        color: #3f4826;
+        border-left: 1px solid #a9c34e;
+        padding-left: 20px;
+      }
+      footer {
+        padding: 24px 0 38px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        justify-content: space-between;
+        color: var(--muted);
+        font-size: 11px;
+      }
+      .note {
+        font-size: 11px;
+        color: #777c72;
+        margin-top: 18px;
+      }
+      @media (max-width: 760px) {
+        .wrap {
+          width: min(100% - 36px, 600px);
+        }
+        .topbar nav {
+          display: none;
+        }
+        .hero {
+          padding: 65px 0 48px;
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+        .hero-aside {
+          border-left: 0;
+          border-top: 1px solid var(--line);
+          padding: 18px 0 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+        }
+        .hero-aside div + div {
+          margin: 0;
+        }
+        .metrics {
+          grid-template-columns: 1fr 1fr;
+          margin-bottom: 70px;
+        }
+        .metric:nth-child(3) {
+          border-left: 0;
+          padding-left: 0;
+          border-top: 1px solid var(--line);
+        }
+        .metric:nth-child(4) {
+          border-top: 1px solid var(--line);
+        }
+        section {
+          padding-bottom: 70px;
+        }
+        .section-head {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+        .principles,
+        .project-grid {
+          grid-template-columns: 1fr;
+        }
+        .feature {
+          grid-template-columns: 1fr;
+          padding: 28px;
+          gap: 22px;
+        }
+        .job,
+        .stack {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+        .closing {
+          grid-template-columns: 1fr;
+          padding: 32px;
+          margin-bottom: 45px;
+        }
+        footer {
+          gap: 15px;
+          flex-direction: column;
+        }
+      }
+      @media print {
+        body {
+          background: white;
+        }
+        .wrap {
+          width: 100%;
+        }
+        .topbar nav {
+          display: none;
+        }
+        .hero {
+          padding-top: 45px;
+        }
+        section {
+          break-inside: avoid;
+          padding-bottom: 45px;
+        }
+        .feature,
+        .closing,
+        .principle,
+        .project {
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <div class="mark">ENGINEER / PROFILE 2026</div>
+        <nav>
+          <a href="#approach">Approach</a><a href="#work">Selected work</a
+          ><a href="#career">Career</a><a href="#stack">Stack</a>
+        </nav>
+        <div>SEOUL · KR</div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div>
+            <div class="stamp">BACKEND ENGINEER · PRODUCT MINDED</div>
+            <div class="kicker">WHY FIRST. BEYOND THE CODE.</div>
+            <h1>
+              왜 해야 하는지 묻고,<br /><em>기술 너머의 문제를</em><br />봅니다.
+            </h1>
+            <p class="hero-copy">
+              요청된 기능을 구현하기 전에 왜 필요한지, 실제로 해결해야 할 문제가
+              무엇인지부터 살핍니다. 사용자와 비즈니스의 맥락을 이해하고 문제를
+              다시 정의해, 도메인과 시스템에 맞는 구조로 구체화합니다. 세무
+              서비스, 제조 AI, 커머스에서 제품의 요구를 기술적 설계와 구현으로
+              연결해왔습니다.
+            </p>
+          </div>
+          <aside class="hero-aside">
+            <div>
+              <strong>현재의 역할</strong>Backend Engineer<br />Product-minded ·
+              Hands-on
+            </div>
+            <div><strong>경험</strong>만 5년 · 햇수로 6년 차</div>
+            <div><strong>주력 기술</strong>Kotlin · Java · Spring Boot</div>
+            <div>
+              <strong>관심 있는 다음 문제</strong>더 큰 트래픽과 복잡도,<br />사용자와
+              가까운 제품
+            </div>
+          </aside>
+        </section>
+
+        <div class="metrics">
+          <div class="metric">
+            <b>0 → 1</b><span>모호한 요구를 제품과 시스템으로 구체화</span>
+          </div>
+          <div class="metric">
+            <b>3</b><span>세무 · 제조 AI · 커머스 도메인</span>
+          </div>
+          <div class="metric">
+            <b>5년</b><span>백엔드 중심의 제품 개발 경험</span>
+          </div>
+          <div class="metric">
+            <b>End-to-end</b><span>문제 정의부터 구현과 운영까지</span>
+          </div>
+        </div>
+
+        <section id="approach">
+          <div class="section-head">
+            <div class="section-no">01 / HOW I WORK</div>
+            <div>
+              <h2>일을 대하는 방식</h2>
+              <p class="lead">
+                저를 설명하는 건 기술 목록보다 문제를 대하는 태도에 가깝습니다.
+              </p>
+            </div>
+          </div>
+          <div class="principles">
+            <article class="principle">
+              <div class="num">01</div>
+              <h3>요청보다 문제를 먼저 봅니다</h3>
+              <p>
+                처음 전달된 해결책이 정답이라고 가정하지 않습니다. 사용자와
+                운영의 맥락을 확인하고 지금 풀어야 할 문제와 MVP 범위를 다시
+                정리합니다.
+              </p>
+            </article>
+            <article class="principle">
+              <div class="num">02</div>
+              <h3>결정과 실행 사이를 잇습니다</h3>
+              <p>
+                기획서나 설계안에서 일을 끝내지 않습니다. 데이터 모델, 상태
+                전이, API, 어드민과 운영 흐름까지 실제 동작하는 시스템으로
+                연결합니다.
+              </p>
+            </article>
+            <article class="principle">
+              <div class="num">03</div>
+              <h3>복잡함을 운영 가능한 구조로</h3>
+              <p>
+                중복 처리, 데이터 정합성, 장애 이후 복구처럼 평소에는 보이지
+                않는 경계 조건을 중요하게 생각합니다. 만들고 끝나는 코드보다
+                오래 운영할 수 있는 구조를 지향합니다.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="work">
+          <div class="section-head">
+            <div class="section-no">02 / SELECTED WORK</div>
+            <div>
+              <h2>대표적으로 해결한 문제</h2>
+              <p class="lead">
+                프로젝트의 이름보다 어떤 문제를 맡았고, 어디까지 책임졌는지를
+                중심으로 정리했습니다.
+              </p>
+            </div>
+          </div>
+
+          <article class="feature">
+            <div>
+              <div class="eyebrow">01 · PRODUCT / COMMERCE</div>
+              <h3>결제 키 변경 요청을<br />주문·결제 시스템 전환으로</h3>
+              <p class="summary">
+                외부 결제사 변경이 출발점이었지만, 기존 결제 방식은 새 PG에서
+                지원하지 않았습니다. 단순 연동 수정으로는 해결할 수 없어
+                주문부터 콘텐츠 전달까지 범위를 다시 정의했습니다.
+              </p>
+              <div class="outcome">
+                약 3개월 · 백엔드 2명 + 프론트엔드 1명 협업
+              </div>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  운영 담당자의 수작업과 기존 흐름을 확인하고 MVP 범위 및
+                  우선순위 결정
+                </li>
+                <li>
+                  주문·결제·쿠폰·적립금·콘텐츠 전달과 복구 흐름 설계 및 구현
+                  주도
+                </li>
+                <li>
+                  PortOne 연동, 웹훅 수신 후 PG 조회 API로 실제 거래 상태 재확인
+                </li>
+                <li>
+                  유효한 상태 전이만 허용하고 중복 주문·쿠폰 사용·적립금 차감
+                  방지
+                </li>
+                <li>
+                  쿠폰과 적립금 등 후처리 단위별 락을 분리하고 트랜잭션 경계를
+                  나눠 동시성과 정합성 고려
+                </li>
+                <li>
+                  미완료 주문은 배치에서 PG 상태를 확인한 뒤 정리하도록 구성
+                </li>
+                <li>백엔드뿐 아니라 어드민 클라이언트 작업도 담당</li>
+              </ul>
+            </div>
+          </article>
+
+          <div class="project-grid">
+            <article class="project">
+              <div class="tag">02 · PRODUCT / SEMINAR</div>
+              <h3>세미나 상품과 이용 흐름 설계</h3>
+              <p>
+                일정·회차, 모집 정원, 신청자, 결제, 참석 확인 등 일반 상품과
+                다른 정책을 독립적인 상품 흐름으로 구체화했습니다.
+              </p>
+              <ul>
+                <li>전체 일정·회차별 신청과 정원 관리 구현</li>
+                <li>결제 완료부터 참석 확정·QR 발급·현장 체크인까지 연결</li>
+                <li>결제 실패·취소 시 참석 상태와 신청 인원 복구</li>
+                <li>무료·쿠폰·적립금 결제도 동일한 후처리 흐름으로 처리</li>
+              </ul>
+            </article>
+            <article class="project">
+              <div class="tag">03 · DOMAIN DESIGN / CONTENT</div>
+              <h3>콘텐츠 이용 도메인의 책임 재정의</h3>
+              <p>
+                구매 여부에 종속되어 있던 콘텐츠 이용 구조를 분리해, 주문 없이도
+                다양한 방식으로 콘텐츠를 제공할 수 있도록 개선했습니다.
+              </p>
+              <ul>
+                <li>
+                  주문은 구매·결제, 콘텐츠는 이용 상태·조건을 관리하도록 책임
+                  분리
+                </li>
+                <li>소장·대여 유형과 이용 기간 및 상태 모델링</li>
+                <li>강사·저자 제공, 기업·기관 제공, 이벤트 보상 지원</li>
+                <li>프로모션의 전자책 대여 활용 및 내부 이용 요청 절차 제거</li>
+              </ul>
+            </article>
+            <article class="project">
+              <div class="tag">04 · PLATFORM / ACCESS CONTROL</div>
+              <h3>사용자 그룹 기반 접근 제어</h3>
+              <p>
+                역할만으로 표현하기 어려웠던 프로젝트·기수·교육 과정별 소속
+                관계를 공통 권한 구조로 모델링했습니다.
+              </p>
+              <ul>
+                <li>사용자·그룹·커뮤니티 관계 설계</li>
+                <li>
+                  게시판·게시물·댓글의 반복 접근 검증을 공통 영역으로 분리
+                </li>
+                <li>
+                  단건 조회와 목록 조회에 맞춰 접근 검증과 조회 범위 제한 구분
+                </li>
+              </ul>
+            </article>
+            <article class="project">
+              <div class="tag">05 · INDUSTRIAL AI / PRODUCT</div>
+              <h3>MRX-ray 이상탐지 대시보드 상용화</h3>
+              <p>
+                AI 엔지니어와 협업해 산업 장비 진동 데이터 모니터링·라벨링
+                대시보드를 프로토타입부터 고객 현장 적용까지 개발했습니다.
+              </p>
+              <ul>
+                <li>클라우드 서비스와 전용 센서 연동 및 데이터 수집·관리</li>
+                <li>이상 징후의 주요 입력 변수와 기여도 분석 정보 제공</li>
+                <li>
+                  CO₂ 레이저 드릴의 고장 징후를 실제 고장 약 1개월 전에 탐지한
+                  솔루션의 상용화에 기여
+                </li>
+                <li>초기 3대에서 현장 검증 후 10대 장비로 확대</li>
+              </ul>
+            </article>
+            <article class="project">
+              <div class="tag">06 · API / JAVA MIGRATION</div>
+              <h3>MRX-ray Java 전환과 API 구조 개선</h3>
+              <p>
+                화면에서 실제 필요한 데이터를 기준으로 API와 응답 구조를
+                재구성하고, 운영 기술 전환에 필요한 기반을 정리했습니다.
+              </p>
+              <ul>
+                <li>Java 기반 서비스 구조와 핵심 API 개발 주도</li>
+                <li>화면 단위 데이터 조회로 API 응답 구조 통합</li>
+                <li>불필요한 컬럼·인덱스·대체키 정비</li>
+              </ul>
+            </article>
+            <article class="project">
+              <div class="tag">07 · DATA PIPELINE</div>
+              <h3>모델링 원천 데이터 적재 자동화</h3>
+              <p>
+                MDF 파일을 수작업으로 파싱·적재하던 과정을 자동화해 모델링 팀이
+                분석과 실험에 집중할 수 있도록 했습니다.
+              </p>
+              <ul>
+                <li>파일 자동 감지, 파싱, 시간 정보 보정 및 PostgreSQL 적재</li>
+                <li>원천 데이터 의미를 유지하는 처리 파이프라인 구축</li>
+                <li>데이터 수집 이상 모니터링·알림 구현</li>
+              </ul>
+            </article>
+          </div>
+          <p class="note">
+            ※ 프로젝트별 공개 가능한 범위에서 역할과 확인된 결과를 기재했습니다.
+            별도 근거가 없는 매출·전환 효과는 인과관계로 표현하지 않았습니다.
+          </p>
+        </section>
+
+        <section id="career">
+          <div class="section-head">
+            <div class="section-no">03 / EXPERIENCE</div>
+            <div>
+              <h2>경력</h2>
+              <p class="lead">
+                도메인은 달라졌지만, 복잡한 문제를 구조화하고 실제 서비스로
+                만드는 역할을 이어왔습니다.
+              </p>
+            </div>
+          </div>
+          <div class="timeline">
+            <article class="job">
+              <div class="job-date">
+                <strong>2024.09 — 2026.11</strong>2년 2개월
+              </div>
+              <div>
+                <h3>한빛앤</h3>
+                <div class="role">
+                  Senior Backend Engineer → Team Lead · 공통 서비스 개발팀
+                </div>
+                <p>
+                  도서·디지털 콘텐츠 커머스의 공통 플랫폼과 신규 상품을
+                  개발했습니다. 주문·결제 시스템 전환, 콘텐츠 도메인 분리,
+                  세미나 상품 흐름, 사용자 그룹 기반 권한 구조 등에서 요구사항
+                  구체화와 백엔드 설계·구현을 주도했습니다. 2026년 3월부터는 팀
+                  리드로서 우선순위와 역할 조율, 기술적 의사결정, 코드 리뷰와
+                  구성원 피드백을 병행했습니다.
+                </p>
+                <div class="chips">
+                  <span class="chip">Kotlin</span><span class="chip">Java</span
+                  ><span class="chip">Spring Boot</span
+                  ><span class="chip">JPA</span
+                  ><span class="chip">PostgreSQL</span
+                  ><span class="chip">PortOne</span>
+                </div>
+              </div>
+            </article>
+            <article class="job">
+              <div class="job-date">
+                <strong>2022.10 — 2024.08</strong>1년 11개월
+              </div>
+              <div>
+                <h3>마키나락스</h3>
+                <div class="role">Backend Engineer</div>
+                <p>
+                  제조 AI 플랫폼 MRX-ray의 백엔드와 데이터 처리 시스템을
+                  개발했습니다. 이상탐지 대시보드의 상용화, Python에서 Java로의
+                  서비스 전환, API 응답 구조 개선, 원천 데이터 적재 자동화와
+                  통계 조회 성능 개선을 수행했습니다.
+                </p>
+                <div class="chips">
+                  <span class="chip">Java</span><span class="chip">Python</span
+                  ><span class="chip">Django</span
+                  ><span class="chip">Kafka</span
+                  ><span class="chip">PostgreSQL</span
+                  ><span class="chip">Kubernetes</span>
+                </div>
+              </div>
+            </article>
+            <article class="job">
+              <div class="job-date">
+                <strong>2021.09 — 2022.10</strong>1년 1개월
+              </div>
+              <div>
+                <h3>유플러스IT</h3>
+                <div class="role">Full-stack Software Engineer</div>
+                <p>
+                  홈택스·손택스 종합소득세 및 근로소득자 경정청구 서비스의
+                  화면·계산 로직 개발과 오픈 대응에 참여했습니다. 반복되는 계산
+                  로직을 공통화하고, 최대 700만 건 규모의 세금계산서 데이터를
+                  분할·병렬 처리하는 배치를 개발했습니다.
+                </p>
+                <div class="chips">
+                  <span class="chip">Java</span
+                  ><span class="chip">JavaScript</span
+                  ><span class="chip">DB2</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <div class="section-no">04 / RESULTS</div>
+            <div>
+              <h2>만들어낸 변화</h2>
+              <p class="lead">
+                수치로 확인할 수 있는 개선과 실제 서비스에 연결한 결과를 구분해
+                담았습니다.
+              </p>
+            </div>
+          </div>
+          <div class="project-grid">
+            <article class="project">
+              <div class="tag">HANBITN · ORDER & PAYMENT</div>
+              <h3>주문·결제 시스템 운영 전환</h3>
+              <p>
+                2026년 1월 신규 주문·결제 시스템의 운영 전환을 완료했습니다.
+              </p>
+              <ul>
+                <li>서로 다른 상품의 통합 주문과 적립금 직접 사용 지원</li>
+                <li>사용자 직접 취소·환불 및 가상계좌 입금 자동 확인 구현</li>
+                <li>
+                  PG 거래 상태 검증과 중복 처리 방지, 실패·취소 후 복구 흐름
+                  정비
+                </li>
+              </ul>
+            </article>
+            <article class="project">
+              <div class="tag">HANBITN · CONTENT DOMAIN</div>
+              <h3>구매와 분리된 콘텐츠 제공</h3>
+              <p>
+                실제 거래 없이도 콘텐츠를 제공할 수 있는 구조로 전환했습니다.
+              </p>
+              <ul>
+                <li>
+                  강사·저자, 기업·기관, 이벤트 보상 등 비구매 방식의 콘텐츠 제공
+                  지원
+                </li>
+                <li>
+                  프로모션에서 전자책 대여를 활용해 실물 도서 증정 관련 비용
+                  절감
+                </li>
+                <li>
+                  내부 콘텐츠 이용을 위한 개발팀의 별도 주문 생성 요청 제거
+                </li>
+              </ul>
+            </article>
+            <article class="project">
+              <div class="tag">MAKINAROCKS · API DESIGN</div>
+              <h3>170 → 80여 개</h3>
+              <p>서비스 API 수를 줄이고 화면 조회 흐름을 단순화했습니다.</p>
+              <ul>
+                <li>페이지당 약 20회 필요했던 API 호출을 1회로 통합</li>
+                <li>화면에서 필요한 데이터를 기준으로 응답 구조 재설계</li>
+              </ul>
+            </article>
+            <article class="project">
+              <div class="tag">MAKINAROCKS · QUERY PERFORMANCE</div>
+              <h3>5초 → 1초 미만</h3>
+              <p>
+                분류 모델 성과 지표의 한 달치 데이터 조회 응답 시간을
+                단축했습니다.
+              </p>
+              <ul>
+                <li>
+                  조회 시점에 계산하던 통계를 데이터 적재 시점에 미리 계산하도록
+                  변경
+                </li>
+                <li>반복 조회 계산과 통계 조회에 따른 DB 부하 감소</li>
+              </ul>
+            </article>
+            <article class="project">
+              <div class="tag">UPLUS IT · TAX SERVICE</div>
+              <h3>949만 5천 건 신고</h3>
+              <p>종합소득세 신고 서비스 오픈과 운영에 참여했습니다.</p>
+              <ul>
+                <li>
+                  전년 대비 18.4% 증가한 신고 규모를 큰 서비스 장애 없이
+                  처리하는 데 기여
+                </li>
+                <li>신고 화면·계산 로직 개발, 테스트 및 오픈 대응 수행</li>
+              </ul>
+            </article>
+            <article class="project">
+              <div class="tag">UPLUS IT · REFACTORING & BATCH</div>
+              <h3>7,000+ → 약 2,000줄</h3>
+              <p>
+                근로소득자 경정청구 계산 스크립트를 재사용 가능한 구조로
+                리팩터링했습니다.
+              </p>
+              <ul>
+                <li>개정 신고 기능 개발을 전년도보다 2주 빠르게 완료</li>
+                <li>
+                  세금계산서 데이터 최대 700만 건을 분할·병렬 처리해 안정적으로
+                  적재
+                </li>
+              </ul>
+            </article>
+            <article class="project">
+              <div class="tag">MAKINAROCKS · INDUSTRIAL AI</div>
+              <h3>3대 → 10대 장비</h3>
+              <p>
+                MRX-ray 이상탐지 솔루션의 고객 현장 검증과 적용 확대에
+                기여했습니다.
+              </p>
+              <ul>
+                <li>CO₂ 레이저 드릴의 실제 고장 약 1개월 전 이상 징후 탐지</li>
+                <li>초기 적용 장비 3대에서 현장 검증 후 10대로 확대</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="stack">
+          <div class="section-head">
+            <div class="section-no">05 / SKILLS</div>
+            <div><h2>기술 역량</h2></div>
+          </div>
+          <div class="stack">
+            <h3>Backend</h3>
+            <p>
+              <strong>Kotlin · Java · Spring Boot</strong><br />Python · Django
+              · JPA
+            </p>
+          </div>
+          <div class="stack">
+            <h3>Data & Messaging</h3>
+            <p>PostgreSQL · MySQL · DB2 · Kafka</p>
+          </div>
+          <div class="stack">
+            <h3>Delivery & Operations</h3>
+            <p>Docker · Kubernetes · GitHub Actions · AWS EC2</p>
+          </div>
+          <div class="stack">
+            <h3>Product collaboration</h3>
+            <p>
+              요구사항 구체화 · MVP 범위 결정 · 데이터 모델 설계 · 프론트엔드
+              협업 · 어드민 개발
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div class="closing">
+            <div>
+              <div class="eyebrow">NEXT CHAPTER</div>
+              <h2>
+                제품의 가치와 성장에<br />더 주도적으로 기여하고 싶습니다.
+              </h2>
+              <p>
+                다음 환경에서는 조직이 지향하는 방향이 실제 제품과 실행으로
+                이어지고, 단기적인 과제를 넘어 제품과 사업의 지속적인 성장을
+                함께 고민할 수 있는지를 중요하게 생각합니다. 특정 도메인에
+                한정하기보다 사용자로서 서비스의 가치를 체감할 수 있고, 많은
+                사람이 사용하는 보편적인 서비스에 관심이 있습니다.
+                이커머스·광고·커뮤니케이션처럼 다양한 사용자와 복잡한 요구를
+                다루는 분야에 흥미가 있으며, 금융처럼 기술적으로 깊이 있는
+                도전을 할 수 있는 도메인도 열려 있습니다. 개발자로서 직접
+                설계하고 구현하는 역할을 이어가면서, 기술적 전문성을 바탕으로 더
+                중요한 문제를 발견하고 제품과 비즈니스의 성장에 주도적으로
+                기여하고 싶습니다.
+              </p>
+            </div>
+            <aside>
+              조직의 방향과 실행이 연결되는 환경.<br />제품의 사용자 가치와
+              사업의 성장을 함께 고민하는 일.<br /><br />직접 만들고 기술적으로
+              판단하며, 제품의 다음 방향에 기여하는 엔지니어를 지향합니다.
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>BACKEND ENGINEER · PROFILE</span
+        ><span>왜 해야 하는지 묻고, 기술 너머의 문제를 봅니다.</span>
+      </footer>
+    </div>
+  </body>
+</html>

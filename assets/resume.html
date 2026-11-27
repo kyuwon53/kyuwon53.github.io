@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
-    <title>이규원 — BE software engineer</title>
+    <title>이규원 — Backend Engineer</title>
     <style>
       :root {
         --ink: #222;
@@ -68,15 +68,15 @@
       .entry-row {
         display: flex;
         align-items: flex-start;
-        gap: 10px;
-        margin: 0 0 10px;
+        gap: 7px;
+        margin: 0 0 7px;
       }
       .entry-period {
-        flex: 0 0 110px;
-        font-size: 9.4pt;
+        flex: 0 0 86px;
+        font-size: 8.8pt;
         color: var(--muted);
-        line-height: 1.45;
-        padding-top: 2px;
+        line-height: 1.25;
+        padding-top: 1px;
       }
       .entry-content {
         flex: 1;
@@ -203,23 +203,23 @@
         font-weight: 400;
       }
       .experience-block {
-        margin: 0 0 18px;
-        padding: 0 0 10px;
+        margin: 0 0 13px;
+        padding: 0 0 7px;
         border-bottom: 1px solid var(--line);
       }
       .experience-block:last-of-type {
         border-bottom: 0;
         padding-bottom: 0;
-        margin-bottom: 10px;
+        margin-bottom: 7px;
       }
       .experience-company {
         font-size: 12pt;
         font-weight: 700;
-        margin: 8px 0 6px;
+        margin: 6px 0 4px;
       }
       .experience-role {
-        margin: 0 0 12px;
-        padding-left: 12px;
+        margin: 0 0 8px;
+        padding-left: 10px;
         border-left: 2px solid #e5e5e5;
       }
       .experience-role:last-child {
@@ -236,32 +236,32 @@
         margin: 0 0 6px;
       }
       .experience-tech {
-        margin: 0 0 8px;
+        margin: 0 0 6px;
         padding-left: 10px;
       }
       .project-item {
-        margin: 0 0 10px;
+        margin: 0 0 7px;
       }
       .project-item .entry-row {
-        align-items: center;
+        align-items: flex-start;
       }
       .project-item .entry-period {
-        padding-top: 0;
+        padding-top: 1px;
       }
       .project-item h4 {
         margin: 0 0 4px;
       }
       .project-item .tech-line {
-        margin: 0 0 6px;
+        margin: 0 0 4px;
       }
       .project-phase {
         font-size: 9.2pt;
         font-weight: 700;
         color: var(--accent);
-        margin: 8px 0 2px;
+        margin: 6px 0 1px;
       }
       .project-body {
-        margin: 0 0 6px;
+        margin: 0 0 4px;
       }
       ul {
         margin: 4px 0 10px;
@@ -290,8 +290,36 @@
       ul {
         break-inside: avoid;
       }
+      .highlight-panel {
+        border-left: 3px solid var(--accent);
+        background: #f7f9fb;
+        padding: 10px 14px;
+        margin: 10px 0 14px;
+      }
+      @media (max-width: 640px) {
+        body {
+          margin: 16px auto;
+          padding: 0 16px;
+          font-size: 10pt;
+        }
+        .entry-row {
+          gap: 6px;
+          margin-bottom: 6px;
+        }
+        .entry-period {
+          flex-basis: 76px;
+          font-size: 8.2pt;
+          line-height: 1.22;
+        }
+        .company-header {
+          flex-wrap: wrap;
+        }
+        .section-title-row {
+          align-items: flex-start;
+        }
+      }
       @page {
-        margin: 16mm;
+        margin: 14mm;
       }
     </style>
   </head>
@@ -300,39 +328,45 @@
       <h1>이규원</h1>
       <p class="name-role">Backend Engineer</p>
     </div>
-    <p class="doc-label">이력서</p>
+    <p class="doc-label">
+      Backend Engineer · 제품과 비즈니스 문제를 기술 구조로 구체화하는 엔지니어
+    </p>
     <p class="contact">Seoul, Korea · 010-8502-8223 · kyuwoon369@gmail.com</p>
     <p class="contact">github.com/kyuwon53 · linkedin.com/in/eekyuwon</p>
-
     <div class="section-title-row">
       <h2>INTRODUCE</h2>
-      <div class="last-update">last updated · 2026.08</div>
+      <div class="last-update">last updated · 2026.11</div>
     </div>
     <p>
       Kotlin, Java, Spring Boot 등을 주력으로 사용하며, 세무, 제조 AI, 커머스
       다양한 도메인에서 시스템 신규 전환·확장, 데이터 마이그레이션, 데이터 싱크,
       운영 효율화, 트래픽 대응을 수행했습니다. 새로운 요구사항을 빠르게 이해하고
-      <b>문제의 본질을 파악하여, 안정성과 확장성 중심의 백엔드 시스템을 구축</b
-      >하는 데 강점을 가지고 있습니다.
+      <b>
+        문제의 본질을 파악하여, 안정성과 확장성 중심의 백엔드 시스템을 구축
+      </b>
+      하는 데 강점을 가지고 있습니다.
     </p>
     <p>
       모호한 요구사항을 기술적으로 구현하는 데 그치지 않고,
-      <b
-        >해결해야 할 문제를 명확하게 정의한 뒤 도메인과 사용자 관점에서 더 나은
-        구조로 재설계</b
-      >하는 것을 중요하게 생각합니다.
+      <b>
+        해결해야 할 문제를 명확하게 정의한 뒤 도메인과 사용자 관점에서 더 나은
+        구조로 재설계
+      </b>
+      하는 것을 중요하게 생각합니다.
     </p>
     <p>
       단기적인 기능 요구사항보다 도메인 간 책임과 의존성, 데이터 정합성, 운영
       안정성, 향후 확장성을 함께 고려해왔습니다. 특히 기존 구조가 새로운
       비즈니스 요구를 수용하기 어려운 경우에는 문제를 기존 방식에 맞추기보다
-      <b>책임과 경계를 다시 정의하여 확장 가능한 구조로 전환</b>하는 데 강점을
-      갖고 있습니다. 서비스의 품질은 기술적 완성도뿐 아니라 도메인에 대한 이해와
-      사용자의 맥락을 얼마나 정확하게 해석하는지에 의해 결정된다고 생각합니다.
-      개발과 기획의 경계를 구분하기보다 비즈니스 목표를 이해하고, 기술적으로
-      지속 가능한 해결책을 설계하는 백엔드 엔지니어를 지향합니다.
+      <b> 책임과 경계를 다시 정의하여 확장 가능한 구조로 전환 </b>
+      하는 데 강점을 갖고 있습니다.
     </p>
-
+    <p>
+      서비스의 품질은 기술적 완성도뿐 아니라 도메인에 대한 이해와 사용자의
+      맥락을 얼마나 정확하게 해석하는지에 의해 결정된다고 생각합니다. 개발과
+      기획의 경계를 구분하기보다 비즈니스 목표를 이해하고, 기술적으로 지속
+      가능한 해결책을 설계하는 백엔드 엔지니어를 지향합니다.
+    </p>
     <h2>SKILLS</h2>
     <div class="skills-section">
       <div class="skills-grid">
@@ -340,110 +374,103 @@
           <h3>Languages &amp; Frameworks</h3>
           <p>
             Kotlin, Java, Spring Boot, Spring Batch, JPA, Python, Django,
-            JavaScript, Typescript, React
+            JavaScript (TypeScript·React 사용 경험)
           </p>
         </div>
         <div class="skill-card">
           <h3>Databases &amp; Messaging</h3>
-          <p>PostgreSQL, MySQL, Kafka, RabbitMQ, DB2</p>
+          <p>PostgreSQL, MySQL, DB2 · Kafka/RabbitMQ 사용 경험</p>
         </div>
         <div class="skill-card">
           <h3>Infrastructure &amp; DevOps</h3>
           <p>AWS, Docker, Kubernetes, GitHub Actions, Jenkins, Grafana</p>
         </div>
+        <div class="skill-card">
+          <h3>Engineering Practices</h3>
+          <p>
+            외부 API 연동, 데이터 마이그레이션, 테스트·코드 리뷰 · AI 도구를
+            활용한 코드 작성·리팩터링·테스트·설계 검토
+          </p>
+        </div>
       </div>
     </div>
-
     <h2>EXPERIENCE</h2>
     <div class="experience-block">
       <div class="company-header">
         <div class="experience-company">한빛앤</div>
-        <div class="current-company">재직 중</div>
+        <div class="company-period">2024.09 ~ 2026.11 · 2년 2개월</div>
       </div>
       <p class="domain">
         30년 이상의 업력을 지닌 한빛출판네트워크의 노하우를 바탕으로, AI 시대에
         맞춘 IT·AI 교육과 디지털 콘텐츠 서비스를 제공하는 회사
-        <span class="metric">MAU 11.8K</span>
+        <span class="metric"> MAU 11.8K </span>
       </p>
       <div class="entry-row">
-        <p class="entry-period">2026.03 ~ 재직 중</p>
+        <p class="entry-period">2026.03<br />~ 2026.11</p>
         <div class="entry-content">
           <p class="role-title">공통 서비스 개발팀</p>
-          <p class="period">Backend Engineer & Team Lead</p>
+          <p class="period">Backend Engineer · Team Lead</p>
           <div class="experience-role">
             <p class="lead-statement">
-              서비스 간 책임 경계와 향후 확장성을 고려해 기술적 방향성을
-              제시하고 아키텍처 의사결정을 주도합니다.
+              신규 서비스 개발과 기존 서비스 개선 및 신규 플랫폼 이관 과제에서
+              제품 요구사항을 구체화하고, 백엔드 설계부터 구현까지 주도했습니다.
             </p>
             <ul>
               <li>
-                본인인증 이관과 함께
-                <b
-                  >인증 결과의 일회성 사용, 사용자 식별정보 보호, 계정 복구
-                  흐름을 재설계</b
-                >하여 공통 인증 체계를 고도화했습니다.
+                본인인증 이관 과정에서 인증 결과의 안전한 처리와 계정 복구
+                흐름을 정비해 공통 인증 기능을 개선했습니다.
               </li>
               <li>
-                <b>역할·회원 그룹·리소스 기반 접근제어</b>를 구축하고 단건
-                검증과 목록 필터링을 분리하여 권한 로직의 중복 및 비즈니스
-                결합도를 축소했습니다.
+                세미나·트랙 등 신규 상품의 요구사항을 사용자 흐름과 도메인으로
+                구체화하고 백엔드 설계·구현을 주도했습니다.
               </li>
               <li>
-                팀장으로서 <b>구성원의 업무 우선순위와 역할을 조율</b>하고,
-                정기적인 피드백과 코드 리뷰를 통해 구성원의 성장을 지원하며 팀이
-                안정적으로 성과를 낼 수 있는 협업 환경을 구축하였습니다.
+                도서 상세 개편 등 기존 서비스 개선과 플랫폼 이관 과제에서 필요한
+                API와 데이터 구조를 설계·구현했습니다.
+              </li>
+              <li>
+                사용자 그룹과 역할에 따른 접근 제어를 공통화해 사용자 소속에
+                따라 커뮤니티와 콘텐츠 접근 범위를 일관되게 적용할 수 있도록
+                했습니다.
+              </li>
+              <li>
+                팀장으로서 업무 우선순위와 역할을 조율하고 기술적 의사결정, 코드
+                리뷰, 구성원 피드백을 맡아 팀의 개발 진행과 품질을 관리했습니다.
               </li>
             </ul>
           </div>
         </div>
       </div>
-
       <div class="entry-row">
-        <p class="entry-period">2024.09 ~ 2026.02</p>
+        <p class="entry-period">2024.09<br />~ 2026.02</p>
         <div class="entry-content">
           <p class="role-title">서비스 개발팀</p>
           <p class="period">Backend Engineer</p>
           <div class="experience-role">
             <ul>
               <li>
-                운영 중인 레거시와 신규 플랫폼의 공존 기간에
-                <b>Spring Batch 기반 Migration 구조</b>를 구축하고, 신규·변경
-                데이터 판별과 식별자 매핑을 통해 상품·강사·연관 콘텐츠를
-                단계적으로 전환 및 동기화했습니다.
+                레거시와 신규 플랫폼이 공존하는 환경에서 데이터 이관 구조를
+                구축하고, 상품·강사·연관 콘텐츠 데이터를 단계적으로
+                전환·동기화했습니다.
               </li>
               <li>
-                주문에 종속되어 있던
-                <b>콘텐츠 이용 권한을 독립적인 상태 모델로 분리</b>하고
-                소장·대여·회수·재활성화 정책을 공통화하여
-                <b
-                  >기업 일괄 지급, 패키지, 이벤트 보상 등 비구매 기반 콘텐츠
-                  제공 방식으로 확장</b
-                >했습니다.
-              </li>
-            </ul>
-          </div>
-          <div class="experience-role">
-            <ul>
-              <li>
-                장바구니 → 주문 → 결제 → 쿠폰·적립금 → 콘텐츠 지급·복구로
-                이어지는
-                <b
-                  >상태 전이와 후처리 책임을 재정의하고, 주문 상태를 13종에서
-                  8종으로 통합하여 상태 복잡도를 약 38% 축소</b
-                >했습니다.
+                콘텐츠 도메인의 책임을 새롭게 정의해 주문과 콘텐츠 이용을
+                분리하고, 소장·대여뿐 아니라 기업 제공과 이벤트 보상 등 비구매
+                방식으로 콘텐츠를 제공할 수 있도록 확장했습니다.
               </li>
               <li>
-                결제 API·Webhook·주문 보정 경로의 역할을 분리하고
-                <b
-                  >결제 실패·취소 시 쿠폰·적립금·콘텐츠·장바구니의 복구 기준을
-                  일원화하여 2026.01 신규 주문·결제 시스템 운영 전환 및
-                  안정화</b
-                >를 이끌었습니다.
+                주문·결제 흐름을 재설계해 서로 다른 상품의 통합 주문, 적립금
+                직접 사용, 사용자 직접 취소·환불, 가상계좌 입금 자동화를
+                구현하고 수동 운영 업무를 줄였습니다.
               </li>
               <li>
-                전자책 원문에 AES-256 기반 청크 암호화를 적용하고 KMS 기반 키
-                보호 구조를 구성하여 콘텐츠 원문과 암호화 키의 보안 책임을
-                분리했습니다.
+                PG 거래 상태 확인과 중복 처리 방지, 결제 실패·취소 후 복구
+                흐름을 설계·구현해 2026년 1월 신규 주문·결제 시스템의 운영
+                전환을 주도했습니다.
+              </li>
+              <li>
+                전자책 원문 암호화와 키 보호 구조를 적용해 콘텐츠 원문과 암호화
+                키의 보안을 강화했습니다.
               </li>
             </ul>
           </div>
@@ -451,10 +478,9 @@
       </div>
       <p class="tech-line experience-tech">
         Tech: Java, Kotlin, Spring Boot, Spring Batch, JPA, PostgreSQL, MySQL,
-        AWS, Docker, Typescript, React
+        AWS, Docker · TypeScript, React 사용 경험
       </p>
     </div>
-
     <div class="experience-block">
       <div class="company-header">
         <div class="experience-company">MakinaRocks</div>
@@ -464,64 +490,44 @@
         공장에서 전장에 이르기까지 가장 거칠고 예측 불가능한 환경에서 동작하는
         피지컬 AI를 만드는 산업 특화 AI 기업.
       </p>
-
       <div class="entry-row">
-        <p class="entry-period">2023.09 ~ 2024.08</p>
+        <p class="entry-period">2023.09<br />~ 2024.08</p>
         <div class="entry-content">
           <p class="role-title">ML Solution Ray팀</p>
           <p class="period">Backend Engineer</p>
           <div class="experience-role">
             <ul>
               <li>
-                AI 엔지니어와 협업해
-                <b>이상탐지 대시보드를 프로토타입 단계부터 상용 배포까지</b>
-                개발했습니다.
+                AI 엔지니어와 협업해 산업 장비 이상탐지 대시보드를
+                프로토타입부터 상용 배포까지 개발했습니다.
               </li>
               <li>
-                실시간 진동 데이터를 모니터링하고 라벨링할 수 있는 기능을 구현해
-                장비 상태 분석과 운영에 활용할 수 있는 기반을 마련했습니다.
+                실시간 진동 데이터 모니터링·라벨링 기능을 구현해 고객 현장의
+                장비 상태 분석을 지원했습니다.
               </li>
               <li>
-                클라우드 기반 대시보드와 전용 진동 센서를 연계해 별도 구축 없이
-                장비 데이터를 수집·관리할 수 있는 구조를 정리했습니다.
-              </li>
-              <li>
-                실제 고객 환경에 적용해
-                <b
-                  >상용 프로젝트를 수주하고, CO2 레이저 드릴에서 고장 1개월 전
-                  이상 징후를 예측</b
-                >하는 성과로 실사용까지 연결했습니다.
+                CO2 레이저 드릴의 고장 징후를 실제 고장 약 1개월 전에 탐지한
+                솔루션의 상용화에 기여했습니다.
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="entry-row">
-        <p class="entry-period">2022.10 ~ 2023.09</p>
+        <p class="entry-period">2022.10<br />~ 2023.09</p>
         <div class="entry-content">
           <p class="role-title">MLService팀</p>
           <p class="period">Backend Engineer</p>
           <div class="experience-role">
             <ul>
               <li>
-                고객사로부터 전달받은 원천 데이터(MDF 포맷)를 자동
-                감지·파싱·시간 보정·적재하는 DB 구축 프로세스를 설계했습니다.
+                MDF 원천 데이터를 자동 감지·파싱·적재하는 Python 파이프라인을
+                구축해 모델링 팀의 수작업 데이터 적재를 제거했습니다.
               </li>
               <li>
-                Python 기반 적재 자동화를 구현하고 PostgreSQL과 K8s 환경에
-                배포해 <b>수작업 적재를 제거</b>했습니다.
-              </li>
-              <li>
-                데이터 적재 과정을 자동화해 모델링 데이터 정합성을 확보하고 ML
-                실험 생산성과 효율성을 높였습니다.
-              </li>
-              <li>
-                원천 데이터와 이상치 추론 값의 수집 이상을 자동 판별하고 Slack
-                알림을 보내는 모니터링 스크립트를 개발했습니다.
-              </li>
-              <li>
-                이상치 임계값과 통계 테이블 기반 적재 구조를 개선해 조회 속도를
-                <b>5초에서 1초 미만</b>으로 단축하고 DB 부하를 줄였습니다.
+                데이터 수집 이상을 감지하는 모니터링과 알림을 구현하고, 통계
+                데이터 적재 방식을 개선해 조회 시간을 5초에서 1초 미만으로
+                단축했습니다.
               </li>
             </ul>
           </div>
@@ -532,7 +538,6 @@
         RabbitMQ, Kubernetes, Docker, AWS
       </p>
     </div>
-
     <div class="experience-block">
       <div class="company-header">
         <div class="experience-company">유플러스아이티(Uplus IT)</div>
@@ -540,11 +545,10 @@
       </div>
       <p class="domain">
         전국민 10명 중 9명이 사용하는 홈택스·손택스 세금 신고 서비스
-        <span class="metric">MAU 358.8K</span>
+        <span class="metric"> MAU 358.8K </span>
       </p>
-
       <div class="entry-row">
-        <p class="entry-period">2021.09 ~ 2022.10</p>
+        <p class="entry-period">2021.09<br />~ 2022.10</p>
         <div class="entry-content">
           <p class="role-title">홈택스·손택스 종합소득세팀</p>
           <p class="period">Full-Stack Software Engineer</p>
@@ -555,16 +559,18 @@
                 운영했습니다.
               </li>
               <li>
-                최종 신고 인원 <b>949만 5,000명, 전년 대비 18.4% 증가</b>한
-                구간을 장애 없이 처리했습니다.
+                최종 신고 인원
+                <b> 949만 5,000명, 전년 대비 18.4% 증가 </b>
+                한 구간을 장애 없이 처리했습니다.
               </li>
               <li>
                 세법 개정 일정에 맞춰 신고 화면과 계산 로직을 함께 조정하고
                 재사용 가능한 계산 구조를 정리했습니다.
               </li>
               <li>
-                세금계산서 대량 배치 처리 최적화를 통해 <b>700만 건 적재</b>를
-                안정적으로 수행했습니다.
+                세금계산서 대량 배치 처리 최적화를 통해
+                <b> 700만 건 적재 </b>
+                를 안정적으로 수행했습니다.
               </li>
             </ul>
           </div>
@@ -572,54 +578,80 @@
       </div>
       <p class="tech-line experience-tech">Tech: Java, JSP, JavaScript, DB2</p>
     </div>
-
     <h2>Projects</h2>
-
     <h3>한빛앤</h3>
+
     <div class="project-item">
-      <h4>세미나 상품 도메인 확장 및 이용 흐름 설계</h4>
+      <h4>주문·결제 시스템 신규 전환 및 도메인 재설계</h4>
       <div class="entry-row">
-        <p class="entry-period">2026.06 ~ 2026.08</p>
+        <p class="entry-period">2025.10<br />~ 2026.02</p>
         <div class="entry-content">
-          <p class="period">Backend Engineer</p>
+          <p class="period">
+            Backend Engineer · 프로젝트 설계 및 백엔드 구현 주도
+          </p>
         </div>
       </div>
       <p class="project-phase">문제</p>
       <p class="project-body">
-        세미나는 일반 상품과 달리 주문·결제뿐 아니라 모집 기간, 일정/회차, 정원,
-        참석자, 사전 질문, 환불 제한, QR 출석 등 다수의 상태와 정책이 동시에
-        연결되는 상품이었습니다. 기존 상품 구조에 예외 분기를 추가하는 방식으로
-        구현할 경우 주문·결제 로직이 세미나 정책에 강하게 종속되고, PG Webhook
-        재처리나 결제 취소 과정에서 신청 인원과 참석자 상태가 불일치할 가능성이
-        존재하였습니다.
+        상품 유형과 결제 방식에 따라 주문을 나누어야 했고, 적립금 사용을 위한
+        별도 전환과 주문 취소 시 CS 요청, 가상계좌 입금의 수동 확인 등 구매
+        과정과 운영 업무에 불필요한 단계가 있었습니다. 주문·결제 상태가
+        쿠폰·적립금·콘텐츠 지급과 복잡하게 얽혀 있어 새로운 결제 정책을
+        추가하거나 실패·취소 상황을 일관되게 처리하기도 어려웠습니다.
       </p>
       <p class="project-phase">해결</p>
       <p class="project-body">
-        세미나를 기존 상품의 예외로 처리하지 않고
-        <b>상품 전시 → 일정 → 신청 → 주문 → 결제 → 참석</b>으로 이어지는
-        독립적인 상태 모델로 구성했습니다. <b>일정·회차 중심으로 정의</b>하여
-        회차별 신청과 정원 관리를 하나의 기준으로 통합했습니다. <br /><br />
-        주문 생성 시 참석자를 대기 상태로 생성하고, 결제 완료 시 참석 확정· 신청
-        인원 반영·QR Token 발급이 순차적으로 처리되도록 후처리 흐름을
-        구성했습니다. 결제 실패·취소 시에는 참석 상태와 신청 인원을 함께
-        복구하도록 설계했으며, 중복 Webhook이나 결제 재처리 상황에서도 신청
-        인원이 중복 반영되지 않도록 멱등성을 적용했습니다.
-        <br /><br />
-        또한 무료 결제·전액 쿠폰·적립금 결제처럼 실제 결제 금액이 없는 경우에도
-        동일한 결제 완료 후처리가 수행되도록 구성하여 결제 방식과 관계없이
-        일관된 신청·참석 처리 흐름을 유지했습니다.
+        프론트엔드 1명, 백엔드 2명의 3인 팀에서 기존 시스템 분석과 이관·신규
+        개발 범위 결정부터 주문·결제·쿠폰·적립금·콘텐츠 지급의 도메인 및 데이터
+        구조 설계, PG 연동, 백엔드와 어드민 구현을 주도했습니다. 상품 정책과
+        결제 처리를 분리해 서로 다른 상품을 한 주문으로 처리하고 적립금을 결제
+        단계에서 바로 사용하도록 했으며, PG 거래 상태를 재확인해 주문 상태를
+        검증하고 쿠폰·적립금의 중복 사용과 실패·취소 후 복구를 일관되게
+        처리했습니다. 결제 대기 만료 주문은 PG 거래 상태를 다시 확인해 누락된
+        후처리를 보정하도록 구성했습니다.
       </p>
       <p class="project-phase">결과</p>
       <p class="project-body">
-        <b>상품 전시부터 신청, 주문·결제, 참석 확정, QR 발급, 현장 체크인</b
-        >까지 세미나의 전체 사용자 흐름을 기존 상품 구조 안에서 연결했습니다.
-        전체 일정 신청과 회차별 신청을 모두 지원하고 정원 관리 기준을 일정
-        단위로 일원화했으며, 1인 1매 정책·참석자별 고유 QR Token·환불 마감 이후
-        취소 제한 등 세미나 핵심 정책을 시스템에서 일관되게 적용할 수 있도록
-        했습니다. <br /><br />
-        또한 중복 Webhook 및 결제 재처리 상황에서도 신청 인원이 중복 반영되지
-        않도록 결제 후처리의 안정성을 확보하고, 기존 상품·주문·결제 구조를
-        새로운 상품 유형까지 확장할 수 있는 기반을 마련했습니다.
+        대상·비대상 상품의 통합 주문, 적립금 직접 사용, 사용자 직접 취소·환불,
+        가상계좌 입금 자동 확인을 지원해 구매 과정의 마찰과 운영자의 수동 처리
+        업무를 줄였습니다. 주문 상태와 후처리 기준을 일원화해 다양한 상품·결제
+        방식에 대응할 수 있는 기반을 마련했고, 2026년 1월 신규 시스템 운영
+        전환을 완료했습니다.
+      </p>
+      <p class="tech-line experience-tech">
+        Tech: Kotlin, Java, Spring Boot, JPA, PostgreSQL
+      </p>
+    </div>
+    <hr class="project-sep" />
+
+    <div class="project-item">
+      <h4>세미나 상품 도메인 확장 및 이용 흐름 설계</h4>
+      <div class="entry-row">
+        <p class="entry-period">2026.06<br />~ 2026.08</p>
+        <div class="entry-content"><p class="period">Backend Engineer</p></div>
+      </div>
+      <p class="project-phase">문제</p>
+      <p class="project-body">
+        세미나는 일반 상품과 달리 일정·회차, 모집 정원, 참석자, 환불 제한, 출석
+        확인 등 별도의 정책과 상태를 필요로 했습니다. 기존 상품 흐름에 예외
+        조건을 추가하면 주문·결제 로직과 세미나 운영 정책이 강하게 결합되고,
+        결제 실패나 취소 시 신청 인원과 참석자 상태가 어긋날 수 있었습니다.
+      </p>
+      <p class="project-phase">해결</p>
+      <p class="project-body">
+        세미나를 별도 예외가 아닌 상품 전시부터 일정·신청·주문·결제·참석까지
+        이어지는 독립적인 이용 흐름으로 설계했습니다. 전체 일정 또는 회차별
+        신청과 정원 관리를 지원하고, 결제 완료 시 참석 확정과 QR 발급이 이어지며
+        결제 실패·취소 시에는 참석 상태와 신청 인원이 함께 복구되도록
+        구현했습니다. 무료 결제, 전액 쿠폰, 적립금 결제도 동일한 완료 후처리를
+        거치도록 구성했습니다.
+      </p>
+      <p class="project-phase">결과</p>
+      <p class="project-body">
+        신청부터 결제, 참석 확정, QR 발급과 현장 체크인까지 세미나의 전체 흐름을
+        연결했습니다. 회차별 정원과 참석 상태를 일관되게 관리하고, 중복 결제
+        알림이나 재처리 상황에서도 신청 인원이 중복 반영되지 않도록 해 새로운
+        상품 유형을 안정적으로 운영할 수 있는 기반을 마련했습니다.
       </p>
       <p class="tech-line experience-tech">
         Tech: Kotlin, Java, Spring Boot, PostgreSQL
@@ -630,271 +662,132 @@
     <div class="project-item">
       <h4>커뮤니티 사용자 그룹 시스템 구축</h4>
       <div class="entry-row">
-        <p class="entry-period">2026.07 ~ 2026.08</p>
-        <div class="entry-content">
-          <p class="period">Backend Engineer</p>
-        </div>
+        <p class="entry-period">2026.07<br />~ 2026.08</p>
+        <div class="entry-content"><p class="period">Backend Engineer</p></div>
       </div>
       <p class="project-phase">문제</p>
       <p class="project-body">
-        서비스가 확대되면서 특정 프로젝트·기수·과정에 참여한 사용자에게만
-        <b>해당 커뮤니티와 게시판·콘텐츠를 제공</b>해야 하는 요구가
-        발생하였습니다. 기존에는 관리자 역할(Role)을 중심으로 서비스 이용 범위를
-        구분하고 있어 사용자의 소속과 참여 그룹에 따라 커뮤니티를 구성하기
-        어려웠으며, 새로운 그룹이나 서비스가 추가될수록 각 API에서 사용자 조건을
-        개별적으로 처리해야 하는 문제가 있었습니다.
+        프로젝트·기수·교육 과정 등 특정 그룹에 속한 사용자에게만 커뮤니티와
+        게시판·콘텐츠를 제공해야 했지만, 기존 역할 중심의 권한 체계로는 사용자의
+        소속에 따른 접근 범위를 표현하기 어려웠습니다. 각 API에서 사용자 조건을
+        개별 처리하면 기능이 늘어날수록 권한 로직이 중복되는 문제도 있었습니다.
       </p>
       <p class="project-phase">해결</p>
       <p class="project-body">
-        Discord의 Role과 유사하게 사용자가 여러 그룹에 소속될 수 있는 사용자
-        그룹 모델을 설계하고,
-        <b>사용자·그룹·커뮤니티 간 관계를 별도의 도메인으로 구성</b>하였습니다.
-        이를 기반으로 특정 프로젝트나 기수에 소속된 사용자에게 해당 그룹의
-        커뮤니티와 게시판·콘텐츠를 제공할 수 있도록 서비스 이용 구조를
-        확장하였습니다. <br /><br />
-        게시판·게시물·댓글 등 여러 기능에서 반복되던 사용자별 이용 가능 여부
-        검증은 Annotation + AOP 기반의 공통 계층으로 분리하여 각 비즈니스 로직과
-        독립적으로 관리할 수 있도록 하였습니다. 단건 조회와 목록 조회의 특성을
-        구분하여, 단건 조회는 이용 가능 여부를 검증하고 목록 조회는 사용자의
-        소속 그룹에 따라 조회 범위를 제한하도록 설계하였습니다.
+        한 사용자가 여러 그룹에 소속될 수 있도록 사용자·그룹·커뮤니티의 관계를
+        모델링하고, 그룹별 접근 권한을 공통으로 적용할 수 있는 구조를
+        설계했습니다. 게시판·게시물·댓글 등에서 반복되던 접근 검증을 공통
+        영역으로 분리하고, 단건 조회와 목록 조회의 특성에 맞게 접근 여부 확인과
+        조회 범위 제한을 구분했습니다.
       </p>
       <p class="project-phase">결과</p>
       <p class="project-body">
-        사용자가 참여한
-        <b>프로젝트·기수·과정에 따라 이용할 수 있는 커뮤니티를 유연하게 구성</b
-        >할 수 있는 기반을 마련하였습니다. 비회원·일반 회원·특정 그룹의 회원 등
-        사용자 유형에 따라 서로 다른 커뮤니티와 콘텐츠를 제공할 수 있으며,
-        새로운 그룹이나 역할이 추가되더라도
-        <b>기존 비즈니스 로직을 수정하지 않고</b> 사용자와 그룹의 관계를
-        구성하는 방식으로 서비스를 확장할 수 있도록 개선하였습니다. <br /><br />
-        또한 게시판·게시물·댓글 등 여러 기능에서 중복되던 사용자별 이용 가능
-        여부 판단을 공통 영역으로 분리하여, 새로운 커뮤니티 기능을 추가할 때
-        동일한 사용자 그룹 모델을 재사용할 수 있도록 구조화하였습니다.
+        사용자의 프로젝트·기수·과정 소속에 따라 이용 가능한 커뮤니티와 콘텐츠를
+        유연하게 구성할 수 있게 되었습니다. 새로운 그룹이나 커뮤니티가
+        추가되어도 기존 비즈니스 로직을 반복 수정하지 않고 관계와 권한을 설정해
+        확장할 수 있도록 개선했습니다.
       </p>
       <p class="tech-line experience-tech">
         Tech: Kotlin, Java, Spring Boot, PostgreSQL
       </p>
     </div>
     <hr class="project-sep" />
+
     <div class="project-item">
-      <h4>Path 기반 권한 제어를 선언형 API 권한 체계로 전환</h4>
+      <h4>URL 구조 중심의 권한 제어를 API 기능 중심으로 개선</h4>
       <div class="entry-row">
         <p class="entry-period">2026.03</p>
-        <div class="entry-content">
-          <p class="period">Backend Engineer</p>
-        </div>
+        <div class="entry-content"><p class="period">Backend Engineer</p></div>
       </div>
-
       <p class="project-phase">문제</p>
       <p class="project-body">
-        기존 API 권한 체계는 <code>/api/public/**</code>,
-        <code>/api/private/**</code>, <code>/api/admin/**</code>처럼 URL Path
-        규칙을 기준으로 인증·권한을 판별하는 구조였습니다. 이 방식은 API의 실제
-        기능이나 필요한 역할보다 <b>URL 구조가 권한 정책을 결정</b>하게 되어,
-        하나의 도메인 안에서도 역할별 접근 범위가 달라지는 요구를 표현하기
-        어려웠습니다. 또한 신규 역할이나 기능이 추가될 때 Path 구조와 Security
-        설정을 함께 수정해야 해 권한 정책과 API 구현이 강하게 결합되는 문제가
+        기존에는 API의 URL 경로를 기준으로 접근 권한을 구분해, 같은 서비스 영역
+        안에서 기능별로 권한을 세분화하기 어려웠습니다. 신규 역할이나 API가
+        추가될 때마다 URL 규칙과 보안 설정을 함께 변경해야 하는 제약도
         있었습니다.
       </p>
-
       <p class="project-phase">해결</p>
       <p class="project-body">
-        Path 패턴 중심의 권한 설정을 제거하고, 각 API에
-        <code>@PreAuthorize</code>를 명시하는
-        <b>메서드 단위 선언형 권한 제어 방식</b>으로 전환했습니다. 각
-        엔드포인트가 필요한 역할을 직접 선언하도록 변경하여 URL 구조와 권한
-        정책을 분리하고, 공개 API 역시 명시적인 권한 정책을 갖도록 접근제어
-        기준을 일원화했습니다. <br /><br />
-        또한 신규 API가 추가될 때 권한 어노테이션이 누락되는 문제를 방지하기
-        위해 변경된 Controller의 보안 어노테이션 적용 여부를
-        <b>CI에서 자동 검증</b>하도록 구성하여, 개발 과정에서 권한 정책이
-        지속적으로 지켜지도록 보완했습니다.
+        URL 구조와 권한 정책을 분리하고, 각 API가 제공하는 기능과 필요한 권한을
+        기준으로 접근 정책을 선언하도록 전환했습니다. 신규 API에서 접근 정책이
+        누락되지 않도록 개발 단계에서 보안 설정 여부를 자동으로 확인하는 검증도
+        추가했습니다.
       </p>
-
       <p class="project-phase">결과</p>
       <p class="project-body">
-        URL 구조에 종속되어 있던 권한 정책을
-        <b>API 기능 단위의 선언형 접근제어 구조로 전환</b>하여 신규 역할 및
-        세분화된 기능 권한을 기존 Path 체계 변경 없이 적용할 수 있는 기반을
-        마련했습니다. 권한 정책을 Controller에서 명시적으로 확인할 수 있게 되어
-        API와 권한의 관계를 명확하게 만들었으며, 신규 API 생성 시 권한 설정
-        누락까지 자동 검증하여 접근제어 정책의 일관성과 유지보수성을 높였습니다.
+        URL 규칙을 바꾸지 않고도 기능별 접근 범위를 명확하게 정의할 수 있게
+        되었으며, 새로운 역할과 API가 추가될 때 권한 정책을 일관되게 적용하고
+        누락을 사전에 확인할 수 있도록 개선했습니다.
       </p>
-
       <p class="tech-line experience-tech">Tech: Kotlin, Java, Spring Boot</p>
     </div>
     <hr class="project-sep" />
+
     <div class="project-item">
-      <h4>주문·결제 시스템 신규 전환 및 도메인 재설계</h4>
+      <h4>콘텐츠 도메인의 책임 재정의 및 분리</h4>
       <div class="entry-row">
-        <p class="entry-period">2025.10 ~ 2026.02</p>
-        <div class="entry-content">
-          <p class="period">Backend Engineer</p>
-        </div>
+        <p class="entry-period">2025.06<br />~ 2025.07</p>
+        <div class="entry-content"><p class="period">Backend Engineer</p></div>
       </div>
       <p class="project-phase">문제</p>
       <p class="project-body">
-        기존 주문·결제 시스템은 상품 유형과 결제 방식에 따라 사용자에게 불필요한
-        제약과 추가 절차가 발생하는 구조였습니다. 문화비 소득공제 대상 상품과
-        비대상 상품을 <b>한 번에 주문할 수 없어</b> 주문을 나누어야 했고,
-        적립금을 사용하기 위해 <b>별도의 포인트로 전환하는 과정</b>이
-        필요했습니다. 또한 주문 취소나 결제 취소 시
-        <b>사용자가 직접 처리할 수 없어 CS를 거쳐야</b> 했으며, 무통장 입금은
-        실시간으로 결제 여부를 확인할 수 없어
-        <b>운영자의 확인 이후에야 주문이 완료</b>되는 등 구매 과정의 불필요한
-        단계와 대기 시간이 존재했습니다. <br /><br />
-        이러한 사용자 경험의 제약은 주문·결제 상태가 상품과 결제 방식별로
-        복잡하게 분기되는 기존 시스템 구조와 연결되어 있었습니다. 주문 상태가
-        과도하게 세분화되어 API·DB·운영툴에서 서로 다른 의미로 사용되고
-        있었으며, 결제 성공·실패·취소에 따라 쿠폰·적립금·콘텐츠 등 여러 도메인의
-        상태를 함께 변경해야 했습니다. 외부 PG의 API 응답, Webhook, 가상계좌
-        만료 등 서로 다른 경로에서 결제 상태가 변경될 수 있어 각 상황을 일관되게
-        처리하고 실패한 주문을 복구할 수 있는 구조도 필요했습니다.
-      </p>
-      <p class="project-phase">해결</p>
-      <p class="project-body">
-        주문·결제 과정에서 발생하는 <b>사용자 제약을 줄이는 것</b>을 목표로
-        장바구니부터 주문·결제·혜택·콘텐츠 지급까지 전체 흐름을 재설계했습니다.
-        상품과 결제 정책을 주문 상태와 분리하여 문화비 소득공제 상품과 비대상
-        상품을 <b>하나의 주문에서 함께 처리</b>할 수 있도록 하고, 적립금을
-        <b>별도의 포인트로 전환하지 않고 결제 과정에서 직접 사용</b>할 수 있도록
-        결제 모델을 재구성했습니다. <br /><br />
-        주문 취소와 결제 취소도 CS를 통한 수동 처리에 의존하지 않도록 주문
-        상태와 환불 후처리 기준을 명확히 정의하고, 사용자 요청부터 결제
-        취소·쿠폰·적립금· 콘텐츠·장바구니 복구까지 연결되는 흐름을 설계했습니다.
-        무통장 입금은 외부 결제 상태를 비동기적으로 반영할 수 있도록 결제 API와
-        Webhook의 책임을 분리하고, 입금 확인에 따라 주문 상태가 자동으로
-        전환되도록 구성했습니다.
-        <br /><br />
-        동시에 기존 13종의 주문 상태를 8종으로 통합하고 API·DB·운영툴에서 동일한
-        상태 체계를 사용하도록 일원화했습니다. 결제 실패·취소 및 외부 PG와 내부
-        주문 상태가 불일치하는 상황에 대한 복구 기준을 정의하고, 처리되지 않은
-        주문을 탐지·보정하는 흐름을 구성했습니다. 무료 결제, 쿠폰·적립금 결제,
-        가상계좌, 패키지, 대여 상품 등 다양한 상품·결제 정책도 동일한 주문
-        상태와 후처리 구조에서 처리할 수 있도록 재설계했습니다.
-      </p>
-      <p class="project-phase">결과</p>
-      <p class="project-body">
-        기존에 분리해서 주문해야 했던 문화비 소득공제 대상·비대상 상품을
-        <b>하나의 주문에서 함께 구매할 수 있도록 개선</b>하고, 적립금 전환
-        단계를 제거하여 결제 과정에서 사용자의 추가 행동을 줄였습니다. 주문·결제
-        취소 과정에서도
-        <b>CS를 거치지 않고 사용자가 직접 처리할 수 있는 기반</b>을
-        마련했습니다. <br /><br />
-        무통장 입금에는
-        <b>가상계좌 시스템을 도입하여 입금 확인과 주문 상태 변경을 자동화</b
-        >했습니다. 사용자는 운영자의 확인을 기다리지 않고 입금 후
-        <b>실시간으로 주문·결제 완료까지 이어지는 플로우</b>를 경험할 수 있게
-        되었으며, 운영 측면에서도 기존에
-        <b
-          >수동으로 확인하고 처리하던 입금 확인 및 주문 상태 변경 업무를
-          자동화</b
-        >했습니다. <br /><br />
-        주문 상태를 13종 → 8종으로 축소하여 상태 수 기준 복잡도를 약 38%
-        감소시키고, API·DB·운영툴의 주문 상태 해석 기준을 일원화했습니다. 결제
-        API·Webhook· 주문 보정 경로의 책임을 분리하고 실패·취소 시
-        쿠폰·적립금·콘텐츠·장바구니의 복구 기준을 통합하여 결제 후처리의
-        일관성과 운영 대응력을 높였습니다. 이를 기반으로 2026년 1월 신규
-        주문·결제 시스템을 운영 전환하고 이후 데이터 보정 및 레거시 주문 연동
-        로직 제거까지 진행했습니다.
-      </p>
-      <p class="tech-line experience-tech">
-        Tech: Kotlin, Spring Boot, PostgreSQL, Transaction, Webhook, Scheduler
-      </p>
-    </div>
-    <hr class="project-sep" />
-    <div class="project-item">
-      <h4>콘텐츠 이용 권한 아키텍처 재설계</h4>
-      <div class="entry-row">
-        <p class="entry-period">2025.06 ~ 2025.07</p>
-        <div class="entry-content">
-          <p class="period">Backend Engineer</p>
-        </div>
-      </div>
-      <p class="project-phase">문제</p>
-      <p class="project-body">
-        기존에는 콘텐츠를 이용하려면 반드시 주문 데이터가 존재해야 하는 구조로
-        설계되어 있어, <b>콘텐츠의 제공과 주문이 강하게 결합</b>되어 있었습니다.
-        이로 인해 강사에게 자신의 강의를 제공하거나 콘텐츠팀에서 강의를 확인해야
-        하는 경우에도 실제 구매가 발생하지 않았음에도
-        <b>개발팀에서 가짜 주문 데이터를 생성</b>해야 했으며, 콘텐츠를 구매 외의
-        다양한 방식으로 제공하기 어려웠습니다. 또, 콘텐츠 접근 제어가 되어있지
-        않았고 이를 위해서는 주문 데이터를 조회해서 처리해야하는 상황이었습니다.
-      </p>
-      <p class="project-phase">해결</p>
-      <p class="project-body">
-        주문과 콘텐츠 이용의 결합을 제거하기 위해
-        <b>콘텐츠 이용을 독립적인 도메인으로 분리</b>하고, 사용자가 특정
-        콘텐츠를 이용할 수 있는 상태를 <b>별도로 관리</b>하도록 구조를
-        재설계했습니다. 기존에는 주문 정보를 조회해 구매 여부를 확인하고 콘텐츠
-        이용 가능 여부를 판단했다면, 변경 후에는 콘텐츠 이용 정보를 별도로
-        조회하여 현재 사용자의 이용 상태를 판단하도록 책임을 분리했습니다.
-        <br /><br />
-        콘텐츠 이용 정보에는 콘텐츠와 사용자의 관계뿐 아니라 소장·대여와 같은
-        이용 형태와 시작·종료 시점, 상태 등을 관리할 수 있도록 모델링하여
-        <b>주문과 독립적으로 이용 상태를 생성하고 변경</b>할 수 있도록 했습니다.
-        이를 통해 콘텐츠 이용을 생성하는 주체와 주문을 발생시키는 주체를
-        분리하고, 구매가 아닌 경우에도 동일한 콘텐츠 이용 모델을 사용할 수
-        있도록 설계했습니다. <br /><br />
-        또한 주문 취소나 재구매처럼 주문 상태가 변경되는 경우에도 기존 콘텐츠
-        이용 상태가 의도하지 않게 변경되지 않도록 주문 시점의 콘텐츠 이용 상태를
-        Snapshot으로 보존하고, 주문 상태 변화에 따라 필요한 상태를 복원할 수
-        있도록 구성했습니다.
-      </p>
-      <p class="project-phase">결과</p>
-      <p class="project-body">
-        주문과 콘텐츠 이용의 결합을 제거하여 기존의 소장 구매 방식만 제공하던
-        구조에서 <b>소장과 대여를 모두 지원</b>할 수 있도록 콘텐츠 이용 방식을
-        확장했습니다. 또한 주문 없이도 사용자의 콘텐츠 이용을 직접 부여할 수
-        있게 되면서 <b>강사·저자의 콘텐츠 입과 및 입과 이벤트</b>를 운영할 수
-        있게 되었고,
-        <b
-          >B2B·B2G 사업 등 구매와 다른 방식으로 콘텐츠를 제공할 수 있는 기반을
-          마련</b
-        >했습니다. <br /><br />
-        마케팅에서도 기존에는 프로모션을 위해 실물 도서를 무료 증정해야 했던
-        방식을 전자책 대여로 대체할 수 있게 되어, 콘텐츠를 활용한 다양한
-        프로모션을 운영하면서 <b>실물 도서 제공에 따른 비용을 절감</b>을
-        했습니다. 또한 강사나 콘텐츠팀이 콘텐츠를 이용하기 위해 개발팀에 가짜
-        주문 데이터 생성을 요청하던 과정을 제거하여 콘텐츠 운영 과정의 개발
-        의존성을 줄였습니다.
-      </p>
-      <p class="tech-line experience-tech">
-        Tech: Kotlin, Spring Boot, PostgreSQL, Domain Modeling
-      </p>
-    </div>
-    <hr class="project-sep" />
-    <h3>MakinaRocks</h3>
-    <div class="project-item">
-      <h4>MRX-ray 고도화</h4>
-      <div class="entry-row">
-        <p class="entry-period">2022.10 ~ 2024.08</p>
-        <div class="entry-content">
-          <p class="period">Backend Engineer</p>
-        </div>
-      </div>
-      <p class="project-phase">문제</p>
-      <p class="project-body">
-        산업 현장의 장비 데이터를 클라우드 기반으로 수집·관리하면서 이상 징후를
-        조기에 탐지해야 했고, 장비별 데이터 수집 구조와 현장 운영 환경이 달라
-        프로토타입 수준의 기능을 실사용 가능한 운영 체계로 확장할 필요가
+        콘텐츠 이용 가능 여부를 주문 데이터로 판단하는 구조여서 구매가 아닌
+        방식으로 콘텐츠를 제공하려면 실제 거래가 없는 가짜 주문을 생성해야
+        했습니다. 강사·콘텐츠팀의 내부 이용이나 기업 제공, 이벤트 보상 등 다양한
+        제공 방식을 지원하기 어려웠고 콘텐츠 접근 제어도 주문 정보에 의존하고
         있었습니다.
       </p>
       <p class="project-phase">해결</p>
       <p class="project-body">
-        AI 엔지니어와 협업해 이상탐지 대시보드를 프로토타입부터 상용 배포까지
-        개발하고, 실시간 진동 데이터 모니터링과 라벨링 기능을 구현했습니다. 이상
-        징후 발생 시 최대 10개의 주요 입력 변수와 기여도를 분석한 진단 보고서가
-        자동 전송되도록 구성해 현장 엔지니어가 장비 상태를 빠르게 파악할 수
-        있도록 했습니다.
+        주문은 구매와 결제를, 콘텐츠는 사용자가 콘텐츠를 이용할 수 있는 상태와
+        조건을 관리하도록 책임을 새롭게 정의하고 두 도메인을 분리했습니다.
+        콘텐츠와 사용자 간 이용 관계에 소장·대여 유형, 이용 기간과 상태를
+        관리하도록 했으며, 주문 외의 주체도 콘텐츠 이용을 직접 부여할 수 있게
+        했습니다. 주문 취소나 재구매로 기존 이용 상태가 임의로 바뀌지 않도록
+        주문 시점의 이용 정보를 보존하고 필요한 상태를 복원할 수 있도록
+        구성했습니다.
       </p>
       <p class="project-phase">결과</p>
       <p class="project-body">
-        반도체 부품 제조사의 CO2 레이저 드릴에 적용해
-        <b>실제 고장 1개월 전에 이상 징후를 예측</b>했고, 초기 3대 장비에 적용된
-        솔루션이 현장 검증을 거쳐 <b>10대 장비로 확장</b>되었습니다. 이를 통해
-        장비 고장 대응과 유지보수 의사결정을 지원하는 상용 솔루션으로
-        검증되었습니다.
+        소장·대여뿐 아니라 강사·저자 제공, 기업·기관 대상 제공, 이벤트 보상 등
+        구매와 무관한 콘텐츠 제공이 가능해졌습니다. 프로모션에서 실물 도서 증정
+        대신 전자책 대여를 활용해 관련 비용을 줄였고, 강사와 콘텐츠팀이 콘텐츠를
+        이용할 때 개발팀에 별도 주문 생성을 요청하던 과정도 제거했습니다.
+      </p>
+      <p class="tech-line experience-tech">
+        Tech: Kotlin, Spring Boot, PostgreSQL
+      </p>
+    </div>
+    <hr class="project-sep" />
+
+    <h3>MakinaRocks</h3>
+    <div class="project-item">
+      <h4>MRX-ray 이상탐지 대시보드 상용화</h4>
+      <div class="entry-row">
+        <p class="entry-period">2023.09<br />~ 2024.08</p>
+        <div class="entry-content"><p class="period">Backend Engineer</p></div>
+      </div>
+      <p class="project-phase">문제</p>
+      <p class="project-body">
+        산업 장비의 이상 징후를 조기에 파악하려면 현장에서 수집되는 진동
+        데이터를 지속적으로 확인하고 분석 결과를 이해하기 쉬운 형태로 제공할
+        필요가 있었습니다. 초기 프로토타입을 실제 고객 환경에서 사용할 수 있는
+        제품으로 확장해야 했습니다.
+      </p>
+      <p class="project-phase">해결</p>
+      <p class="project-body">
+        AI 엔지니어와 협업해 진동 데이터 모니터링·라벨링 기능을 갖춘 대시보드를
+        개발하고, 클라우드 서비스와 전용 센서를 연동해 장비 데이터를
+        수집·관리하도록 구현했습니다. 이상 징후가 발생하면 주요 입력 변수와
+        기여도를 분석한 진단 정보를 제공해 현장 담당자가 원인을 파악하도록
+        지원했습니다.
+      </p>
+      <p class="project-phase">결과</p>
+      <p class="project-body">
+        반도체 부품 제조사의 CO₂ 레이저 드릴에 적용해 실제 고장 약 1개월 전에
+        이상 징후를 예측했고, 초기 3대에 적용한 솔루션을 현장 검증 후 10대
+        장비로 확대했습니다. 프로토타입을 실제 고객이 사용하는 상용 프로젝트로
+        연결하는 데 기여했습니다.
       </p>
       <p class="tech-line experience-tech">
         Tech: Python, Django, PostgreSQL, Kubernetes, Docker, AWS
@@ -903,35 +796,29 @@
     <hr class="project-sep" />
 
     <div class="project-item">
-      <h4>MRX-ray 자바 마이그레이션</h4>
+      <h4>MRX-ray Java 전환 및 API 구조 개선</h4>
       <div class="entry-row">
-        <p class="entry-period">2022.10 ~ 2024.08</p>
-        <div class="entry-content">
-          <p class="period">Backend Engineer</p>
-        </div>
+        <p class="entry-period">2022.10<br />~ 2024.08</p>
+        <div class="entry-content"><p class="period">Backend Engineer</p></div>
       </div>
       <p class="project-phase">문제</p>
       <p class="project-body">
-        기존 이상 탐지 모니터링 서비스는 Python/Django로 구현되어 있었고,
-        안정성·확장성·구인 등의 이유로 Java 전환이 결정된 상태였습니다. 또한
-        서비스 구조가 플랫하게 구성되어 있어 API 수와 데이터 모델을 함께 정리할
-        필요가 있었습니다.
+        Python/Django로 구현된 서비스의 운영 기술을 Java 기반으로 전환하는
+        과정에서, 기능별로 분산된 API와 초기 요구사항에 맞춰 누적된 데이터
+        구조도 함께 정리할 필요가 있었습니다.
       </p>
       <p class="project-phase">해결</p>
       <p class="project-body">
-        MRX-ray의 기본 구조를 잡고 스켈레톤을 구현했으며, 핵심 API 개발을
-        주도했습니다. 요구사항 변경에 맞춰 도메인을 다시 이해하고
-        <b>UX 관점에서 필요한 데이터와 불필요한 데이터를 구분해 API를 재구성</b
-        >했고, 기존에 기능별로 흩어져 있던 API를 단일 조회 구조로 정리했습니다.
-        데이터베이스는 초기 요구사항과 현재 요구사항 차이를 반영해 불필요한
-        컬럼, 무분별한 인덱스, 대체키를 제거하며 리팩토링했습니다.
+        Java 기반 서비스의 기본 구조와 핵심 API 개발을 주도했습니다. 화면에서
+        실제 필요한 데이터를 기준으로 API를 재구성하고, 관련 데이터를 한 번에
+        조회할 수 있도록 응답 구조와 데이터 모델을 정리했습니다. 현재 요구사항에
+        불필요한 컬럼과 인덱스, 대체키도 함께 정비했습니다.
       </p>
       <p class="project-phase">결과</p>
       <p class="project-body">
-        기존 170개 수준이던 API를 리팩토링하여 80여 개 수준으로 축소했고, 한
-        페이지를 조회하기 위해 20여 개 호출되던 API를 1개 API로 통합해 조회
-        구조를 단순화했습니다. 서비스의 구조적 복잡도를 낮추고 자바 기반 운영
-        체계로의 전환을 안정적으로 마무리했습니다.
+        약 170개였던 API를 80여 개로 줄였고, 한 페이지를 불러오기 위해 20여 차례
+        필요했던 API 호출을 1회로 통합했습니다. 화면 조회 흐름을 단순화하고 Java
+        기반 운영 체계로 전환할 수 있는 기반을 마련했습니다.
       </p>
       <p class="tech-line experience-tech">
         Tech: Java, Spring Boot, PostgreSQL, AWS
@@ -940,70 +827,60 @@
     <hr class="project-sep" />
 
     <div class="project-item">
-      <h4>모델링용 원천 데이터 적재 파이프라인·DB 설계</h4>
+      <h4>모델링용 원천 데이터 적재 파이프라인·DB 구축</h4>
       <div class="entry-row">
-        <p class="entry-period">2022.10 ~ 2024.08</p>
-        <div class="entry-content">
-          <p class="period">Backend Engineer</p>
-        </div>
+        <p class="entry-period">2022.10<br />~ 2023.09</p>
+        <div class="entry-content"><p class="period">Backend Engineer</p></div>
       </div>
       <p class="project-phase">문제</p>
       <p class="project-body">
-        모델링 팀에서 사용할 원천 데이터가 MDF라는 특수한 파일 형태로 전달되어,
-        <b>수작업 파싱과 적재</b>에 의존하면 데이터 활용성과 정합성을 유지하기
-        어려운 상황이었습니다.
+        모델링 팀이 사용하는 원천 데이터가 MDF 파일로 전달되어 수작업으로
+        파싱하고 적재해야 했습니다. 반복 작업에 시간이 들 뿐 아니라 데이터
+        형식과 시간 정보를 일관되게 관리하기 어려웠습니다.
       </p>
       <p class="project-phase">해결</p>
       <p class="project-body">
-        MDF 포맷을 분석해 각 데이터의 의미와 시간 구조를 파악하고, ML 엔지니어와
-        의논하여 원본 데이터를 가공하지 않되 시간 정합을 맞춰 적재하는 방식으로
-        프로세스를 설계했습니다. 설정 파일에 정의된 경로를 감시하다가 파일이
-        들어오면 필요한 데이터를 추출해 DB에 적재하는 구조를 만들고, 사내 K8s
-        환경에 DB와 파싱 프로세스를 배포했습니다.
+        MDF 파일을 자동 감지해 필요한 데이터를 파싱하고 시간 정보를 보정한 뒤
+        PostgreSQL에 적재하는 Python 파이프라인을 구축했습니다. 원본 데이터의
+        의미를 유지하면서 모델링에 필요한 데이터가 자동으로 공급되도록 처리
+        흐름을 설계하고 실행 환경에 배포했습니다.
       </p>
       <p class="project-phase">결과</p>
       <p class="project-body">
-        모델링 팀이 바로 사용할 수 있는 원천 데이터 DB를 구축했고, 반복적인
-        수작업 적재를 제거해 학습 및 분석용 데이터 공급을 안정화했습니다. 이후
-        데이터 구조 변화에 대한 유연성이 아쉬운 점으로 남았지만, 당시 요구사항
-        기준에서는 <b>자동화된 적재 기반</b>을 확보했습니다.
+        모델링 팀의 반복적인 수작업 적재 과정을 제거하고 학습·분석에 필요한
+        데이터를 일관되게 제공할 수 있게 되었습니다. 데이터 정합성을 높이고 모델
+        실험에 집중할 수 있는 기반을 마련했습니다.
       </p>
       <p class="tech-line experience-tech">
-        Tech: Python, PostgreSQL, Docker, Linux, K8s
+        Tech: Python, PostgreSQL, Docker, Linux, Kubernetes
       </p>
     </div>
     <hr class="project-sep" />
 
     <div class="project-item">
-      <h4>분류 모델 성과 지표 기능 개발·개선</h4>
+      <h4>분류 모델 성과 지표 조회 성능 개선</h4>
       <div class="entry-row">
-        <p class="entry-period">2022.10 ~ 2024.08</p>
-        <div class="entry-content">
-          <p class="period">Backend Engineer</p>
-        </div>
+        <p class="entry-period">2022.10<br />~ 2023.09</p>
+        <div class="entry-content"><p class="period">Backend Engineer</p></div>
       </div>
       <p class="project-phase">문제</p>
       <p class="project-body">
-        추론된 이상 값을 기준으로 분류 모델 성과 지표를 조회 시점에 계산하는
-        구조였기 때문에, 임계값이 파라미터로 달라질 수 있는 상황에서는 매번
-        계산이 필요했고
-        <b>대규모 조회에서 DB 부하와 응답 지연이 발생</b>했습니다.
+        모델 성과 지표를 조회할 때마다 대량의 추론 데이터를 기준으로 통계를
+        계산해, 조회 기간이 길어질수록 DB 부하와 응답 지연이 커졌습니다.
       </p>
       <p class="project-phase">해결</p>
       <p class="project-body">
-        추론 전 모델에서 이상 값의 임계값을 1로 맞추는 규약을 두고,
-        <b>조회 시 계산하던 방식을 적재 시점 계산으로 전환</b>했습니다. 추론된
-        이상 값을 애플리케이션에서 처리해 통계 테이블에 적재하도록 개선하여 조회
-        부담을 줄였습니다.
+        조회 시점에 계산하던 통계를 데이터 적재 시점에 미리 계산해 저장하도록
+        변경했습니다. 추론 결과를 통계 테이블에 반영하는 처리 흐름을 구현해
+        반복적인 조회 계산을 줄였습니다.
       </p>
       <p class="project-phase">결과</p>
       <p class="project-body">
-        한 달치 조회 기준 응답 시간을 <b>5초에서 1초 미만</b>으로 단축했고, 지표
-        조회로 인한 DB 부하를 낮춰 성능과 운영 안정성을 함께 개선했습니다.
+        한 달치 데이터 조회 기준 응답 시간을 약 5초에서 1초 미만으로 단축하고,
+        통계 조회로 인한 DB 부하를 낮춰 서비스 응답성과 운영 안정성을
+        개선했습니다.
       </p>
-      <p class="tech-line experience-tech">
-        Tech: Python, PostgreSQL, Docker, Linux
-      </p>
+      <p class="tech-line experience-tech">Tech: Python, PostgreSQL</p>
     </div>
     <hr class="project-sep" />
 
@@ -1011,28 +888,27 @@
     <div class="project-item">
       <h4>홈택스·손택스 종합소득세 일반신고서 (21귀속) 오픈 개발</h4>
       <div class="entry-row">
-        <p class="entry-period">2021.09 ~ 2022.10</p>
+        <p class="entry-period">2021.09<br />~ 2022.10</p>
         <div class="entry-content">
-          <p class="period">Full Stack Software Engineer</p>
+          <p class="period">Full-Stack Software Engineer</p>
         </div>
       </div>
       <p class="project-phase">문제</p>
       <p class="project-body">
-        홈택스에서 가장 트래픽이 높고 사용자 수가 많은 종합소득세 신고 서비스는
-        매년 데이터 이슈와 오픈 대응 부담이 큰 서비스였습니다.
+        홈택스·손택스에서 이용량이 가장 많은 종합소득세 신고 서비스는 신고
+        기간에 트래픽이 집중되고, 오픈 시점의 오류와 데이터 이슈에 신속하게
+        대응해야 했습니다.
       </p>
       <p class="project-phase">해결</p>
       <p class="project-body">
-        작년과 변경되는 부분을 미리 체크하고 동료들과 공유하여 불필요한 작업을
-        줄였으며, 개발 가능한 시간을 확보해 테스트와 검증을 충분히 진행할 수
-        있도록 했습니다. 모르는 부분은 적극적으로 공유하며 팀 내 소통을 강화해
-        버그 원인을 빠르게 파악하고 수정할 수 있는 협업 흐름을 만들었습니다.
+        신고 화면과 계산 로직 개발, 테스트 및 오픈 대응에 참여했습니다. 전년도와
+        달라진 요건과 데이터 흐름을 사전에 확인해 팀과 공유하고, 테스트 중
+        발견된 오류를 분석·수정해 신고 기간에 대비했습니다.
       </p>
       <p class="project-phase">결과</p>
       <p class="project-body">
-        종합소득세 신고 서비스를 안정적으로 오픈·운영했고, 최종 신고 인원
-        <b>949만 5,000명 규모를 장애 없이 처리</b>했습니다. 신고 기간 동안의
-        버그 분석과 대응 속도를 높여 안정적인 운영에 기여했습니다.
+        최종 신고 인원 949만 5,000명으로 전년 대비 18.4% 증가한 신고 규모를 큰
+        서비스 장애 없이 처리하는 데 기여했습니다.
       </p>
       <p class="tech-line experience-tech">Tech: Java, JavaScript, DB2, JSP</p>
     </div>
@@ -1041,32 +917,28 @@
     <div class="project-item">
       <h4>홈택스·손택스 근로소득자 경정청구 (21귀속) 오픈 개발</h4>
       <div class="entry-row">
-        <p class="entry-period">2021.09 ~ 2022.10</p>
+        <p class="entry-period">2021.09<br />~ 2022.10</p>
         <div class="entry-content">
-          <p class="period">Full Stack Software Engineer</p>
+          <p class="period">Full-Stack Software Engineer</p>
         </div>
       </div>
       <p class="project-phase">문제</p>
       <p class="project-body">
-        연말정산을 한 근로자가 세금 감면을 덜 받았을 때 경정청구를 통해 세금을
-        감면받을 수 있어, 21귀속 세법 개정에 맞는 계산기 팝업과 계산 알고리즘을
-        새로 개발해야 했습니다. 기존 코드는 정리가 되어 있지 않아 분석이 어렵고
-        재사용과 변경이 힘든 상태였습니다.
+        세법 개정에 맞춰 근로소득자 경정청구 계산 로직을 변경해야 했지만, 기존
+        스크립트가 7,000줄 이상으로 길고 중복되어 로직을 파악하고 수정·검증하는
+        데 시간이 많이 들었습니다.
       </p>
       <p class="project-phase">해결</p>
       <p class="project-body">
-        재사용 가능하고 변경하기 쉬운 코드 구조로 바꾸자는 의견을 제안하고,
-        7,000줄이 넘던 계산 알고리즘 스크립트를 리팩토링해 약 2,000줄 수준으로
-        정리했습니다. 또한 다른 팀의 데이터와 서비스를 사용해야 하는 구조를
-        빠르게 파악하기 위해 먼저 적극적으로 연락해 데이터 흐름을 이해하고,
-        필요한 계산 로직과 화면 동작을 맞춰 구현했습니다.
+        계산 로직을 재사용하고 변경하기 쉬운 구조로 정리하는 리팩터링을 제안하고
+        직접 진행해 7,000줄 이상이던 스크립트를 약 2,000줄로 줄였습니다. 유관
+        팀의 데이터 흐름을 빠르게 파악해 필요한 계산 로직과 화면 기능을 함께
+        구현했습니다.
       </p>
       <p class="project-phase">결과</p>
       <p class="project-body">
-        계산 구조와 화면 로직을 세법 개정에 맞게 재정비하고, 코드 분석과 추가
-        변경에 드는 시간을 줄였습니다. 원천 데이터 흐름을 빠르게 파악해 이전
-        귀속보다 2주 빨리 구현을 마쳤고, 계산기 팝업과 알고리즘을 안정적으로
-        제공할 수 있었습니다.
+        계산 로직의 중복과 복잡도를 낮춰 변경·테스트 부담을 줄였고, 전년도보다
+        2주 빠르게 개발을 완료해 개정된 신고 기능을 일정에 맞춰 제공했습니다.
       </p>
       <p class="tech-line experience-tech">Tech: Java, JavaScript, DB2, JSP</p>
     </div>
@@ -1075,29 +947,27 @@
     <div class="project-item">
       <h4>기준경비율 주요경비 세금계산서 데이터 적재 배치 개발</h4>
       <div class="entry-row">
-        <p class="entry-period">2021.09 ~ 2022.10</p>
+        <p class="entry-period">2021.09<br />~ 2022.10</p>
         <div class="entry-content">
-          <p class="period">Full Stack Software Engineer</p>
+          <p class="period">Full-Stack Software Engineer</p>
         </div>
       </div>
       <p class="project-phase">문제</p>
       <p class="project-body">
-        기준경비율 주요경비 세금계산서 데이터 70만 건 적재와 대량 세금계산서
-        700만 건 적재 모두 기존 데이터 load 방식으로는 데이터 양 증가와 DB 부하
-        문제를 감당하기 어려운 구조였습니다.
+        기준경비율 주요경비 세금계산서 데이터를 최대 700만 건 규모로 적재해야
+        했으나, 기존 일괄 적재 방식으로는 데이터 증가에 따른 처리 시간과 DB
+        부하를 감당하기 어려웠습니다.
       </p>
       <p class="project-phase">해결</p>
       <p class="project-body">
-        데이터 양에 따라 작업일자를 나누어 배치 처리할 수 있도록 프로그램을
-        수정하고, 적재 방식을 load에서 insert 기반 병렬 처리로 전환했습니다. 첫
-        배치 개발 업무였지만 업무 흐름을 이해하기 위해 계속 질문하고 공식 문서와
-        기존 레퍼런스 자료를 참고해 구현을 완료했습니다.
+        작업일자 기준으로 데이터를 나눠 처리하고, 단순 적재 방식 대신 insert
+        기반 병렬 처리를 적용했습니다. 대량 데이터를 안정적으로 나누어 처리할 수
+        있도록 배치 흐름을 수정했습니다.
       </p>
       <p class="project-phase">결과</p>
       <p class="project-body">
-        70만 건 적재 배치와 700만 건 대량 적재 모두 DB 부하를 낮춘 구조로 처리할
-        수 있게 되었고, 분할 적재와 병렬 처리 기반의 배치 구조를 안정적으로
-        운영할 수 있었습니다.
+        70만 건과 700만 건 규모의 세금계산서 데이터를 분할·병렬 처리해 대량
+        적재를 안정적으로 수행하고, 배치 처리 시 DB 부하를 줄였습니다.
       </p>
       <p class="tech-line experience-tech">Tech: Java, JavaScript, DB2, JSP</p>
     </div>
@@ -1111,11 +981,10 @@
         팀장 승진
       </li>
     </ul>
-
     <h2>EDUCATION</h2>
     <div class="project-item education-item">
       <div class="entry-row">
-        <p class="entry-period">2021.02 ~ 2021.08</p>
+        <p class="entry-period">2021.02<br />~ 2021.08</p>
         <div class="entry-content">
           <p class="education-label">
             넥스트아이티 · 머신러닝 활용 JAVA 웹 응용 SW 엔지니어 과정
@@ -1125,20 +994,22 @@
     </div>
     <div class="project-item education-item">
       <div class="entry-row">
-        <p class="entry-period">2017.03 ~ 2019.02</p>
+        <p class="entry-period">2017.03<br />~ 2019.02</p>
         <div class="entry-content">
           <p class="education-label">
-            충남대학교 · 수학과 <span class="status-note">(편입·졸업)</span>
+            충남대학교 · 수학과
+            <span class="status-note"> (편입·졸업) </span>
           </p>
         </div>
       </div>
     </div>
     <div class="project-item education-item">
       <div class="entry-row">
-        <p class="entry-period">2015.03 ~ 2017.02</p>
+        <p class="entry-period">2015.03<br />~ 2017.02</p>
         <div class="entry-content">
           <p class="education-label">
-            공주대학교 · 응용수학과 <span class="status-note">(중퇴)</span>
+            공주대학교 · 응용수학과
+            <span class="status-note"> (중퇴) </span>
           </p>
         </div>
       </div>
