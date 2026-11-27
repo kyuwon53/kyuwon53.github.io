@@ -9,6 +9,7 @@ order: 4
   title="about me"
   loading="lazy"
   width="100%" 
+  height="1200px"
   frameborder="0"
   >
 </iframe>
